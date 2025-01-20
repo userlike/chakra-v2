@@ -1,6 +1,8 @@
 MIT License
 
 Copyright (c) 2019 Segun Adebayo
+Copyright (c) 2025 Userlike UG
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +21,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+-- 
+
+This forked version of Chakra UI v2 is based on the original project available at:
+https://github.com/chakra-ui/chakra-ui/tree/v2
+
+Changes made in this fork include:
+- Makes sure css-reset is only applied to elements rendered by Chakra UI
