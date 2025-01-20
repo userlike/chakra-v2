@@ -92,7 +92,7 @@ export const Provider: React.FC<ProviderProps> = (props) => {
         colorModeManager={colorModeManager}
         options={theme.config}
       >
-        {resetCSS ? <CSSReset scope={resetScope} /> : <CSSPolyfill />}
+        {resetCSS ? <CSSReset /> : <CSSPolyfill />}
         {!disableGlobalStyle && <GlobalStyle />}
         {portalZIndex ? (
           <PortalManager zIndex={portalZIndex}>{_children}</PortalManager>

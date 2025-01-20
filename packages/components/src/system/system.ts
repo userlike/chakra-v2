@@ -7,6 +7,7 @@ import {
 import {
   assignAfter,
   compact,
+  cx,
   Dict,
   interopDefault,
   runIfFn,
@@ -94,7 +95,7 @@ export function styled<T extends ElementType, P extends object = {}>(
 
   const chakraComponent = forwardRef<any, any>(
     function ChakraComponent(props, ref) {
-      const { children, ...restProps } = props
+      const { children, className, ...restProps } = props
 
       const { colorMode, forced } = useColorMode()
 
@@ -102,7 +103,12 @@ export function styled<T extends ElementType, P extends object = {}>(
 
       return createElement(
         Component,
-        { ref, "data-theme": dataTheme, ...restProps },
+        {
+          ref,
+          "data-theme": dataTheme,
+          className: cx("chakra-v2", className),
+          ...restProps,
+        },
         children,
       )
     },
