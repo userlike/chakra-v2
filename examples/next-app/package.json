@@ -9,10 +9,10 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@chakra-ui/icons": "workspace:*",
-    "@chakra-ui/react": "workspace:*",
-    "@chakra-ui/theme-tools": "workspace:*",
-    "@chakra-ui/next-js": "workspace:*",
+    "@chakra-v2/icons": "workspace:*",
+    "@chakra-v2/react": "workspace:*",
+    "@chakra-v2/theme-tools": "workspace:*",
+    "@chakra-v2/next-js": "workspace:*",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@types/node": "^20.5.2",

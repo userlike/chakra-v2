@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import * as React from "react"
-import { ChakraBaseProvider } from "@chakra-ui/react"
-import { extendTheme } from "@chakra-ui/react/extend-theme"
+import { ChakraBaseProvider } from "@chakra-v2/react"
+import { extendTheme } from "@chakra-v2/react/extend-theme"
 import { makeDecorator } from "@storybook/preview-api"
 import { ColorModeSync } from "./color-mode-sync"
 import { DIRECTION_TOOL_ID } from "./constants"

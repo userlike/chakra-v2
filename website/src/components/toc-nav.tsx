@@ -1,4 +1,4 @@
-import { Box, BoxProps, Text } from '@chakra-ui/react'
+import { Box, BoxProps, Text } from '@chakra-v2/react'
 
 export default function TocNav({ children, title, ...rest }: BoxProps) {
   return (

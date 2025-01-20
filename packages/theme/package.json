@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/theme",
+  "name": "@chakra-v2/theme",
   "version": "3.4.7",
   "description": "The default theme for chakra components",
   "keywords": [
@@ -30,16 +30,16 @@
     "url": "https://github.com/chakra-ui/chakra-ui/issues"
   },
   "dependencies": {
-    "@chakra-ui/anatomy": "workspace:*",
-    "@chakra-ui/theme-tools": "workspace:*",
-    "@chakra-ui/utils": "workspace:*"
+    "@chakra-v2/anatomy": "workspace:*",
+    "@chakra-v2/theme-tools": "workspace:*",
+    "@chakra-v2/utils": "workspace:*"
   },
   "peerDependencies": {
-    "@chakra-ui/styled-system": ">=2.8.0"
+    "@chakra-v2/styled-system": ">=2.8.0"
   },
   "devDependencies": {
-    "@chakra-ui/cli": "workspace:*",
-    "@chakra-ui/styled-system": "workspace:*"
+    "@chakra-v2/cli": "workspace:*",
+    "@chakra-v2/styled-system": "workspace:*"
   },
   "scripts": {
     "build": "tsup src --dts",

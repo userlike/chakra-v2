@@ -1,4 +1,4 @@
-import { Box, Text, HStack, SimpleGrid } from '@chakra-ui/react'
+import { Box, Text, HStack, SimpleGrid } from '@chakra-v2/react'
 import * as React from 'react'
 import DiscordIcon from './docs/discord-logo'
 import { FaTwitter } from 'react-icons/fa'

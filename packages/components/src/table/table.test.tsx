@@ -1,4 +1,4 @@
-import { testA11y } from "@chakra-ui/test-utils"
+import { testA11y } from "@chakra-v2/test-utils"
 import { Table, TableCaption, Tbody, Td, Tfoot, Th, Thead, Tr } from "."
 
 describe("<Table />", () => {

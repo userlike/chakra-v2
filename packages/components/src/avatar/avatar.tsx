@@ -3,8 +3,8 @@ import {
   omitThemingProps,
   SystemStyleObject,
   ThemingProps,
-} from "@chakra-ui/styled-system"
-import { callAllHandlers, cx, dataAttr } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { callAllHandlers, cx, dataAttr } from "@chakra-v2/utils"
 import { useState } from "react"
 import {
   chakra,

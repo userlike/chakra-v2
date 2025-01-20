@@ -1,10 +1,10 @@
-import { usePrevious } from "@chakra-ui/hooks"
+import { usePrevious } from "@chakra-v2/hooks"
 import {
   cssVar,
   omitThemingProps,
   ThemingProps,
-} from "@chakra-ui/styled-system"
-import { cx } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { cx } from "@chakra-v2/utils"
 import { keyframes } from "@emotion/react"
 import {
   chakra,

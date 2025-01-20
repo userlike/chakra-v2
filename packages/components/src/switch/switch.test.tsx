@@ -1,5 +1,5 @@
 import { FormControl, FormLabel } from "../form-control"
-import { render, fireEvent } from "@chakra-ui/test-utils"
+import { render, fireEvent } from "@chakra-v2/test-utils"
 import * as React from "react"
 import { Switch } from "."
 

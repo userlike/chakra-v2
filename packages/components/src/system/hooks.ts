@@ -1,4 +1,4 @@
-import { Dict } from "@chakra-ui/utils"
+import { Dict } from "@chakra-v2/utils"
 import { useColorMode } from "../color-mode"
 import { useTheme } from "./use-theme"
 

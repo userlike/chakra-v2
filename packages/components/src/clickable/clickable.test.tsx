@@ -1,5 +1,5 @@
 import { chakra, forwardRef } from "../system"
-import { fireEvent, render, screen } from "@chakra-ui/test-utils"
+import { fireEvent, render, screen } from "@chakra-v2/test-utils"
 import { useClickable } from "."
 
 const Clickable = forwardRef((props: any, ref) => {

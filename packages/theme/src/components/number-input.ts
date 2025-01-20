@@ -1,9 +1,9 @@
-import { numberInputAnatomy as parts } from "@chakra-ui/anatomy"
+import { numberInputAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   createMultiStyleConfigHelpers,
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { calc, cssVar } from "@chakra-ui/theme-tools"
+} from "@chakra-v2/styled-system"
+import { calc, cssVar } from "@chakra-v2/theme-tools"
 import typography from "../foundations/typography"
 import { inputTheme } from "./input"
 import { runIfFn } from "../utils/run-if-fn"

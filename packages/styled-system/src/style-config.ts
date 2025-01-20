@@ -3,7 +3,7 @@ import {
   mergeWith,
   runIfFn,
   toMediaQueryString,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import { ResponsiveValue, WithCSSVar } from "./utils"
 
 type Theme = WithCSSVar<Record<string, any>>

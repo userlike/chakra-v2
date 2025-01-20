@@ -1,5 +1,5 @@
-import { ResponsiveValue, SystemProps } from "@chakra-ui/styled-system"
-import { mapResponsive } from "@chakra-ui/utils"
+import { ResponsiveValue, SystemProps } from "@chakra-v2/styled-system"
+import { mapResponsive } from "@chakra-v2/utils"
 
 export type StackDirection = ResponsiveValue<
   "row" | "column" | "row-reverse" | "column-reverse"

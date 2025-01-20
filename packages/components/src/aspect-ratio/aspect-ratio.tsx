@@ -1,5 +1,5 @@
-import { ResponsiveValue } from "@chakra-ui/styled-system"
-import { cx, mapResponsive } from "@chakra-ui/utils"
+import { ResponsiveValue } from "@chakra-v2/styled-system"
+import { cx, mapResponsive } from "@chakra-v2/utils"
 import { Children } from "react"
 import { HTMLChakraProps, chakra, forwardRef } from "../system"
 

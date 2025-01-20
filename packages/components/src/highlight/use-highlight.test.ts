@@ -1,4 +1,4 @@
-import { hooks } from "@chakra-ui/test-utils"
+import { hooks } from "@chakra-v2/test-utils"
 import { useHighlight } from "./use-highlight"
 
 describe("useHighlight", () => {

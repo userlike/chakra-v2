@@ -1,4 +1,4 @@
-import { SystemProps } from "@chakra-ui/styled-system"
+import { SystemProps } from "@chakra-v2/styled-system"
 
 export interface ButtonGroupOptions {
   /**

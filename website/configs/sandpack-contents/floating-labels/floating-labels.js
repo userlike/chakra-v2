@@ -8,7 +8,7 @@ module.exports = {
   Input,
   extendTheme,
   Box
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 const activeLabelStyles = {
   transform: "scale(0.85) translateY(-24px)"
 };
@@ -63,7 +63,7 @@ export default function App() {
 `,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 
 import App from "./App";
 

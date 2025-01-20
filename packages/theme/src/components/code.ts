@@ -1,4 +1,4 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { defineStyle, defineStyleConfig } from "@chakra-v2/styled-system"
 import { badgeTheme, badgeVars as vars } from "./badge"
 
 const { variants, defaultProps } = badgeTheme

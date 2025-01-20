@@ -1,4 +1,4 @@
-import { isBrowser } from "@chakra-ui/utils"
+import { isBrowser } from "@chakra-v2/utils"
 import { EmotionCache, withEmotionCache } from "@emotion/react"
 import {
   useCallback,

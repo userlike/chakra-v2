@@ -1,4 +1,4 @@
-import { isObject, mergeWith } from "@chakra-ui/utils"
+import { isObject, mergeWith } from "@chakra-v2/utils"
 import { calc, Operand } from "./calc"
 import { cssVar } from "./css-var"
 import { flattenTokens, FlatToken } from "./flatten-tokens"

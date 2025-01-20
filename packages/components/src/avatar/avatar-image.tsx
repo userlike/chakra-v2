@@ -1,4 +1,4 @@
-import { SystemStyleObject } from "@chakra-ui/styled-system"
+import { SystemStyleObject } from "@chakra-v2/styled-system"
 import { chakra } from "../system"
 import { cloneElement } from "react"
 import { ImageProps, useImage } from "../image"

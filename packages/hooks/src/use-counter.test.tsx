@@ -1,4 +1,4 @@
-import { hooks } from "@chakra-ui/test-utils"
+import { hooks } from "@chakra-v2/test-utils"
 import { useCounter } from "./use-counter"
 
 test("should increment", () => {

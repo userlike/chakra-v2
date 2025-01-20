@@ -1,4 +1,4 @@
-import { HStack, LinkBox, LinkOverlay, Stack, Text } from '@chakra-ui/react'
+import { HStack, LinkBox, LinkOverlay, Stack, Text } from '@chakra-v2/react'
 
 export default function HackathonBanner() {
   return (

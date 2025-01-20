@@ -1,4 +1,4 @@
-export const TutorialApp = `import { Center, ChakraProvider, List, ListItem, Text } from '@chakra-ui/react'
+export const TutorialApp = `import { Center, ChakraProvider, List, ListItem, Text } from '@chakra-v2/react'
 import { useState } from 'react'
 
 export default function App() {

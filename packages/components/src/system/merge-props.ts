@@ -1,4 +1,4 @@
-import { callAll } from "@chakra-ui/utils"
+import { callAll } from "@chakra-v2/utils"
 
 interface Props {
   [key: string]: any

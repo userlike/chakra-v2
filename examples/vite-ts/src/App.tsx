@@ -1,4 +1,4 @@
-import { useColorMode } from "@chakra-ui/react"
+import { useColorMode } from "@chakra-v2/react"
 
 function App() {
   const { toggleColorMode } = useColorMode()

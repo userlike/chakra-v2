@@ -4,7 +4,7 @@ import {
   Link,
   useColorModeValue,
   Wrap,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import React from 'react'
 import { FaGithub, FaNpm, FaYoutube } from 'react-icons/fa'
 import { t } from 'utils/i18n'

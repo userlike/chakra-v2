@@ -1,4 +1,4 @@
-import { act, render, screen } from "@chakra-ui/test-utils"
+import { act, render, screen } from "@chakra-v2/test-utils"
 import { createStandaloneToast } from "."
 
 describe("Standalone Toast", () => {

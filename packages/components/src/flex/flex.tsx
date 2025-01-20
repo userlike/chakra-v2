@@ -1,4 +1,4 @@
-import { SystemProps } from "@chakra-ui/styled-system"
+import { SystemProps } from "@chakra-v2/styled-system"
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
 
 export interface FlexOptions {

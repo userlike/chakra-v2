@@ -1,4 +1,4 @@
-import { defineStyle, ResponsiveValue } from "@chakra-ui/styled-system"
+import { defineStyle, ResponsiveValue } from "@chakra-v2/styled-system"
 import { HTMLChakraProps, chakra, forwardRef } from "../system"
 import { Circle } from "./circle"
 import { getProgressProps, spin } from "./progress.utils"

@@ -1,6 +1,6 @@
-import { Select, SelectProps } from '@chakra-ui/react'
+import { Select, SelectProps } from '@chakra-v2/react'
 import { useRouter } from 'next/router'
-import packageJSON from '@chakra-ui/react/package.json'
+import packageJSON from '@chakra-v2/react/package.json'
 
 function VersionSwitcher(props: SelectProps) {
   const router = useRouter()

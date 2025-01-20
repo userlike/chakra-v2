@@ -1,4 +1,4 @@
-import { Box, Code, Text, Link, VStack, Grid } from "@chakra-ui/react"
+import { Box, Code, Text, Link, VStack, Grid } from "@chakra-v2/react"
 import { Chakra } from "../Chakra"
 import { Layout } from "../components/Layout"
 import { Logo } from "../components/Logo"

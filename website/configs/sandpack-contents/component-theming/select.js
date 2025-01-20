@@ -6,7 +6,7 @@ module.exports = {
   SimpleGrid,
   useColorMode,
   Text
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { MdArrowDropDown } from "react-icons/md";
 
@@ -52,7 +52,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 import App from "./App";
 import { selectTheme } from "./theme/components/Select";
 const theme = extendTheme({
@@ -67,8 +67,8 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  SelectTheme: `import { selectAnatomy } from "@chakra-ui/anatomy";
-import { createMultiStyleConfigHelpers, defineStyle } from "@chakra-ui/react";
+  SelectTheme: `import { selectAnatomy } from "@chakra-v2/anatomy";
+import { createMultiStyleConfigHelpers, defineStyle } from "@chakra-v2/react";
 
 const {
   definePartsStyle,

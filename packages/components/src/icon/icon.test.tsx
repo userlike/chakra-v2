@@ -1,4 +1,4 @@
-import { testA11y } from "@chakra-ui/test-utils"
+import { testA11y } from "@chakra-v2/test-utils"
 import { Md3DRotation } from "react-icons/md"
 import { Icon } from "."
 

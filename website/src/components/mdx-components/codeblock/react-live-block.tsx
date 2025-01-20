@@ -1,4 +1,4 @@
-import { Box, BoxProps, chakra } from '@chakra-ui/react'
+import { Box, BoxProps, chakra } from '@chakra-v2/react'
 import React, { useState } from 'react'
 import { LiveEditor, LiveError, LivePreview, LiveProvider } from 'react-live'
 import CodeContainer from './code-container'

@@ -1,4 +1,4 @@
-import { AspectRatio, Box } from '@chakra-ui/react'
+import { AspectRatio, Box } from '@chakra-v2/react'
 import ReactPlayer, { ReactPlayerProps } from 'react-player'
 
 export function VideoPlayer(props: ReactPlayerProps) {

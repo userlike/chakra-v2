@@ -1,4 +1,4 @@
-import { createContext } from "@chakra-ui/utils"
+import { createContext } from "@chakra-v2/utils"
 import { createStylesContext } from "../system"
 
 export type StepStatusType = "active" | "complete" | "incomplete"

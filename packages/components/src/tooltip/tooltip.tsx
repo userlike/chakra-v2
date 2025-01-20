@@ -2,8 +2,8 @@ import {
   ThemingProps,
   getCSSVar,
   omitThemingProps,
-} from "@chakra-ui/styled-system"
-import { omit, pick } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { omit, pick } from "@chakra-v2/utils"
 import {
   AnimatePresence,
   AnimatePresenceProps,

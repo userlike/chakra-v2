@@ -1,4 +1,4 @@
-import { useBoolean, useInterval } from "@chakra-ui/hooks"
+import { useBoolean, useInterval } from "@chakra-v2/hooks"
 import * as React from "react"
 import {
   Button,

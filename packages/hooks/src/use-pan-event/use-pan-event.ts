@@ -1,4 +1,4 @@
-import { addPointerEvent } from "@chakra-ui/utils"
+import { addPointerEvent } from "@chakra-v2/utils"
 import { useEffect, useRef } from "react"
 import { useLatestRef } from "../use-latest-ref"
 import { PanEvent } from "./pan-event"

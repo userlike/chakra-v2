@@ -7,7 +7,7 @@ module.exports = {
   Button,
   IconButton,
   useColorMode,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useState } from "react";
 
@@ -74,7 +74,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
   import { createRoot } from "react-dom/client";
-  import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+  import { ChakraProvider, extendTheme } from "@chakra-v2/react";
   
   import App from "./App";
   import { skeletonTheme } from "./theme/components/Skeleton";
@@ -96,7 +96,7 @@ export default function App() {
   cssVar,
   defineStyle,
   defineStyleConfig,
-} from "@chakra-ui/styled-system";
+} from "@chakra-v2/styled-system";
 
 const $startColor = cssVar("skeleton-start-color");
 const $endColor = cssVar("skeleton-end-color");

@@ -1,4 +1,4 @@
-import { SystemProps, ThemingProps } from "@chakra-ui/styled-system"
+import { SystemProps, ThemingProps } from "@chakra-v2/styled-system"
 import { useMemo } from "react"
 import type { AlertStatus } from "../alert"
 import { useChakra } from "../system"

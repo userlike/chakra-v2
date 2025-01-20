@@ -1,4 +1,4 @@
-import { createContext } from "@chakra-ui/utils"
+import { createContext } from "@chakra-v2/utils"
 import { AnimatePresence, AnimatePresenceProps, Variants } from "framer-motion"
 import { useSyncExternalStore } from "react"
 import { Portal, PortalProps } from "../portal"

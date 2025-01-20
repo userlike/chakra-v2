@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, HStack, IconButton, CloseButton, useColorMode } from "@chakra-ui/react";
+  App: `import { Box, HStack, IconButton, CloseButton, useColorMode } from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -27,7 +27,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { closeButtonTheme } from "./theme/components/CloseButton";
@@ -45,7 +45,7 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  CloseButtonTheme: `import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+  CloseButtonTheme: `import { defineStyle, defineStyleConfig } from "@chakra-v2/styled-system"
 
 const baseStyle = defineStyle({
   borderRadius: 0, // disable the border radius

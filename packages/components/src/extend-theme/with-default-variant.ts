@@ -1,5 +1,5 @@
-import { ThemingProps } from "@chakra-ui/styled-system"
-import { isObject } from "@chakra-ui/utils"
+import { ThemingProps } from "@chakra-v2/styled-system"
+import { isObject } from "@chakra-v2/utils"
 import { mergeThemeOverride, ThemeExtension } from "./extend-theme"
 
 export function withDefaultVariant({

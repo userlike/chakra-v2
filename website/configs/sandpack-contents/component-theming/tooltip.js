@@ -9,10 +9,10 @@ import {
   Text,
   Icon,
   Tooltip,
-} from '@chakra-ui/react';
+} from '@chakra-v2/react';
 import theme from './theme';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
-import { QuestionIcon } from '@chakra-ui/icons';
+import { QuestionIcon } from '@chakra-v2/icons';
 
 export default function App() {
   return (
@@ -89,7 +89,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container!);
 
 root.render(<App />);`,
-  Theme: `import { extendTheme } from '@chakra-ui/react';
+  Theme: `import { extendTheme } from '@chakra-v2/react';
 import { tooltipTheme } from './components/Tooltip';
 
 const theme = extendTheme({
@@ -115,7 +115,7 @@ const theme = extendTheme({
 });
 
 export default theme;`,
-  Tooltip: `import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
+  Tooltip: `import { defineStyle, defineStyleConfig } from '@chakra-v2/react';
 
 // define the base component styles
 const baseStyle = {
@@ -183,7 +183,7 @@ export const tooltipTheme = defineStyleConfig({
   defaultProps,
 });`,
   ColorModeSwitcher: `import React from 'react';
-import { useColorMode, useColorModeValue, IconButton } from '@chakra-ui/react';
+import { useColorMode, useColorModeValue, IconButton } from '@chakra-v2/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 export const ColorModeSwitcher = props => {

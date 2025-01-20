@@ -3,7 +3,7 @@ import {
   isStyleProp,
   StyleProps,
   SystemStyleObject,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 import {
   assignAfter,
   compact,
@@ -12,7 +12,7 @@ import {
   interopDefault,
   runIfFn,
   splitProps,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import createStyled, { CSSObject, FunctionInterpolation } from "@emotion/styled"
 import { createElement, ElementType, forwardRef } from "react"
 import { useColorMode } from "../color-mode"

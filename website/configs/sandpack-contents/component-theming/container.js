@@ -1,6 +1,6 @@
 module.exports = {
   App: `import React from 'react';
-import { ChakraProvider, Box, Container, VStack } from '@chakra-ui/react';
+import { ChakraProvider, Box, Container, VStack } from '@chakra-v2/react';
 import theme from './theme';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
@@ -42,7 +42,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container!);
 
 root.render(<App />);`,
-  Theme: `import { extendTheme } from '@chakra-ui/react';
+  Theme: `import { extendTheme } from '@chakra-v2/react';
 import { containerTheme } from './components/Container';
 
 const theme = extendTheme({
@@ -66,7 +66,7 @@ const theme = extendTheme({
 });
 
 export default theme;`,
-  Container: `import { defineStyle, defineStyleConfig } from '@chakra-ui/react';
+  Container: `import { defineStyle, defineStyleConfig } from '@chakra-v2/react';
 
 // define the base styles of the component
 const baseStyle = {
@@ -144,7 +144,7 @@ export const containerTheme = defineStyleConfig({
   defaultProps,
 });`,
   ColorModeSwitcher: `import React from 'react';
-import { useColorMode, useColorModeValue, IconButton } from '@chakra-ui/react';
+import { useColorMode, useColorModeValue, IconButton } from '@chakra-v2/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 export const ColorModeSwitcher = props => {

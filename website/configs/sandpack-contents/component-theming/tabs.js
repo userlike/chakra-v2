@@ -10,7 +10,7 @@ import {
   TabPanels,
   Tab,
   TabPanel,
-} from '@chakra-ui/react';
+} from '@chakra-v2/react';
 import theme from './theme';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
@@ -116,7 +116,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container!);
 
 root.render(<App />);`,
-  Theme: `import { extendTheme } from '@chakra-ui/react';
+  Theme: `import { extendTheme } from '@chakra-v2/react';
 import { tabsTheme } from './components/Tabs';
 
 const theme = extendTheme({
@@ -126,9 +126,9 @@ const theme = extendTheme({
 });
 
 export default theme;`,
-  Tabs: `import { tabsAnatomy } from '@chakra-ui/anatomy';
-import { createMultiStyleConfigHelpers } from '@chakra-ui/react';
-import { mode } from '@chakra-ui/theme-tools'; // import utility for setting light and dark mode props
+  Tabs: `import { tabsAnatomy } from '@chakra-v2/anatomy';
+import { createMultiStyleConfigHelpers } from '@chakra-v2/react';
+import { mode } from '@chakra-v2/theme-tools'; // import utility for setting light and dark mode props
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(tabsAnatomy.keys);
@@ -211,7 +211,7 @@ export const tabsTheme = defineMultiStyleConfig({
   defaultProps,
 });`,
   ColorModeSwitcher: `import React from 'react';
-import { useColorMode, useColorModeValue, IconButton } from '@chakra-ui/react';
+import { useColorMode, useColorModeValue, IconButton } from '@chakra-v2/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 export const ColorModeSwitcher = props => {

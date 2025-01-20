@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from "@chakra-ui/test-utils"
+import { render, screen, waitFor } from "@chakra-v2/test-utils"
 import { ToastOptionProvider, ToastProvider, useToast } from "."
 
 describe("useToast", () => {

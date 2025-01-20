@@ -9,9 +9,9 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@chakra-ui/icons": "workspace:*",
-    "@chakra-ui/react": "workspace:*",
-    "@chakra-ui/theme-tools": "workspace:*",
+    "@chakra-v2/icons": "workspace:*",
+    "@chakra-v2/react": "workspace:*",
+    "@chakra-v2/theme-tools": "workspace:*",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@faker-js/faker": "^8.0.2",

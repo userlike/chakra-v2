@@ -1,4 +1,4 @@
-import { render } from "@chakra-ui/test-utils"
+import { render } from "@chakra-v2/test-utils"
 import { Tag, TagCloseButton, TagLabel } from "."
 
 test("Tag (only) renders correctly", () => {

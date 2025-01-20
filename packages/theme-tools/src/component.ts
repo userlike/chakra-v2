@@ -2,7 +2,7 @@ import type {
   SystemStyleObject,
   StyleFunctionProps,
   SystemStyleInterpolation,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 
 export type {
   StyleConfig,
@@ -14,7 +14,7 @@ export type {
   PartsStyleObject,
   PartsStyleFunction,
   PartsStyleInterpolation,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 
 /* -----------------------------------------------------------------------------
  * Global Style object definitions

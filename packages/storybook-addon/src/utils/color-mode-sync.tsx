@@ -1,5 +1,5 @@
 import { useEffect } from "react"
-import { useColorMode } from "@chakra-ui/react"
+import { useColorMode } from "@chakra-v2/react"
 import { addons } from "@storybook/preview-api"
 import { EVENTS } from "./constants"
 

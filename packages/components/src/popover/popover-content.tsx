@@ -1,5 +1,5 @@
-import { defineStyle } from "@chakra-ui/styled-system"
-import { callAll, cx } from "@chakra-ui/utils"
+import { defineStyle } from "@chakra-v2/styled-system"
+import { callAll, cx } from "@chakra-v2/utils"
 import { HTMLMotionProps } from "framer-motion"
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
 import { usePopoverContext, usePopoverStyles } from "./popover-context"

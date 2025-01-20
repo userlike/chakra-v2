@@ -2,8 +2,8 @@ import {
   omitThemingProps,
   SystemStyleObject,
   ThemingProps,
-} from "@chakra-ui/styled-system"
-import { createContext, runIfFn } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { createContext, runIfFn } from "@chakra-v2/utils"
 import { useMemo } from "react"
 import { useMultiStyleConfig, useTheme } from "../system"
 import {

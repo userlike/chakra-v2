@@ -1,4 +1,4 @@
-import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { ArrowForwardIcon } from '@chakra-v2/icons'
 import {
   Box,
   Button,
@@ -7,7 +7,7 @@ import {
   Stack,
   StackDivider,
   Text,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { allBlogs } from 'contentlayer/generated'
 import MDXLayout from 'layouts/mdx'
 import NextLink from 'next/link'

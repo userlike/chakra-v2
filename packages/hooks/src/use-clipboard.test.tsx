@@ -1,4 +1,4 @@
-import { hooks } from "@chakra-ui/test-utils"
+import { hooks } from "@chakra-v2/test-utils"
 import copy from "copy-to-clipboard"
 import { Mock } from "vitest"
 import { useClipboard } from "./use-clipboard"

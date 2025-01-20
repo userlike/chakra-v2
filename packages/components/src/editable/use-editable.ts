@@ -5,8 +5,8 @@ import {
   useFocusOnPointerDown,
   useSafeLayoutEffect,
   useUpdateEffect,
-} from "@chakra-ui/hooks"
-import { ariaAttr, callAllHandlers, PropGetter } from "@chakra-ui/utils"
+} from "@chakra-v2/hooks"
+import { ariaAttr, callAllHandlers, PropGetter } from "@chakra-v2/utils"
 import { RefObject, useCallback, useEffect, useRef, useState } from "react"
 
 interface FocusableElement {

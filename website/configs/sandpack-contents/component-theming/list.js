@@ -11,7 +11,7 @@ module.exports = {
   Text,
   SimpleGrid,
   Checkbox,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { MdCheckCircle, MdSettings, MdOutlineSell } from "react-icons/md";
 
@@ -108,11 +108,11 @@ export default function App() {
     </Box>
   );
 }`,
-  Index: `import { ChakraProvider } from "@chakra-ui/react";
+  Index: `import { ChakraProvider } from "@chakra-v2/react";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-v2/react";
 import { listTheme } from "./theme/components/List";
 export const theme = extendTheme({
   components: { List: listTheme }
@@ -129,9 +129,9 @@ root.render(
   ListTheme: `import {
   defineStyle,
   createMultiStyleConfigHelpers,
-} from "@chakra-ui/styled-system";
-import { listAnatomy as parts } from "@chakra-ui/anatomy";
-import { mode } from "@chakra-ui/theme-tools";
+} from "@chakra-v2/styled-system";
+import { listAnatomy as parts } from "@chakra-v2/anatomy";
+import { mode } from "@chakra-v2/theme-tools";
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys);
 

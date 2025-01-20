@@ -1,5 +1,5 @@
 /* eslint-disable global-require */
-import { mocks, screen } from "@chakra-ui/test-utils"
+import { mocks, screen } from "@chakra-v2/test-utils"
 import * as React from "react"
 import { useColorMode } from "./color-mode-context"
 

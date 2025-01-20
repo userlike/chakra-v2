@@ -9,7 +9,7 @@ import {
   FormLabel,
   Input,
   VStack
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 
 export default function App() {
   const formik = useFormik({
@@ -69,7 +69,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 
 import App from "./App";
 

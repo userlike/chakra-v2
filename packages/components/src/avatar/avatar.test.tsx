@@ -1,4 +1,4 @@
-import { act, mocks, render, testA11y } from "@chakra-ui/test-utils"
+import { act, mocks, render, testA11y } from "@chakra-v2/test-utils"
 import { Avatar, AvatarBadge } from "."
 
 describe("accessibility", () => {

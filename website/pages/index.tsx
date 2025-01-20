@@ -17,7 +17,7 @@ import {
   Wrap,
   WrapItem,
   chakra,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import users from 'chakra-users'
 import ChakraNextImage from 'components/chakra-next-image'
 import { AdBanner } from 'components/chakra-pro/ad-banner'

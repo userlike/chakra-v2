@@ -1,4 +1,4 @@
-import { theme as defaultTheme } from "@chakra-ui/theme"
+import { theme as defaultTheme } from "@chakra-v2/theme"
 import type { ChakraProviderProps } from "./provider/create-provider"
 import { createProvider } from "./provider/create-provider"
 

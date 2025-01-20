@@ -1,6 +1,6 @@
-import { ThemingProps, omitThemingProps } from "@chakra-ui/styled-system"
+import { ThemingProps, omitThemingProps } from "@chakra-v2/styled-system"
 import { HTMLChakraProps, chakra, forwardRef, useStyleConfig } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 
 export interface CodeProps
   extends HTMLChakraProps<"code">,

@@ -4,7 +4,7 @@ import {
   screen,
   testA11y,
   waitFor,
-} from "@chakra-ui/test-utils"
+} from "@chakra-v2/test-utils"
 import { useEffect, useRef, useState } from "react"
 import { Editable, EditableInput, EditablePreview } from "."
 

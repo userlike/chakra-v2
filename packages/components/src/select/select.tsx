@@ -3,8 +3,8 @@ import {
   ThemingProps,
   layoutPropNames,
   omitThemingProps,
-} from "@chakra-ui/styled-system"
-import { dataAttr, split } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { dataAttr, split } from "@chakra-v2/utils"
 import { cloneElement, isValidElement } from "react"
 import { FormControlOptions, useFormControl } from "../form-control"
 import {

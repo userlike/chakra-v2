@@ -1,4 +1,4 @@
-import { Box, Link as ChakraLink, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, Link as ChakraLink, SimpleGrid, Text } from '@chakra-v2/react'
 import Link from 'next/link'
 import {
   BlitzSvg,

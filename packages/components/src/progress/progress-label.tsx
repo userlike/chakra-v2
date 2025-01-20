@@ -1,4 +1,4 @@
-import { defineStyle } from "@chakra-ui/styled-system"
+import { defineStyle } from "@chakra-v2/styled-system"
 import { HTMLChakraProps, chakra } from "../system"
 import { useProgressStyles } from "./progress"
 

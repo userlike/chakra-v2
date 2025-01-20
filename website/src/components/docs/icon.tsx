@@ -1,4 +1,4 @@
-import { Icon, IconProps } from '@chakra-ui/react'
+import { Icon, IconProps } from '@chakra-v2/react'
 
 /** This component is used in the `icon.mdx` page. */
 const CircleIcon = (props: IconProps) => (

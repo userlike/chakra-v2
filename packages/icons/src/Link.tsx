@@ -1,4 +1,4 @@
-import { createIcon } from "@chakra-ui/react"
+import { createIcon } from "@chakra-v2/react"
 
 export const LinkIcon = createIcon({
   displayName: "LinkIcon",

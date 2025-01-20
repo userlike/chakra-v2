@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, SimpleGrid, IconButton, Textarea, useColorMode } from "@chakra-ui/react";
+  App: `import { Box, SimpleGrid, IconButton, Textarea, useColorMode } from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -29,7 +29,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { textareaTheme } from "./theme/components/Textarea";
@@ -47,7 +47,7 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  TextareaTheme: `import { defineStyle, defineStyleConfig } from "@chakra-ui/react";
+  TextareaTheme: `import { defineStyle, defineStyleConfig } from "@chakra-v2/react";
 
 const baseStyle = defineStyle({
   borderRadius: 0,

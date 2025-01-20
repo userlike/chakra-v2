@@ -1,10 +1,10 @@
-import { useMergeRefs } from "@chakra-ui/hooks"
+import { useMergeRefs } from "@chakra-v2/hooks"
 import {
   omitThemingProps,
   SystemStyleObject,
   ThemingProps,
-} from "@chakra-ui/styled-system"
-import { cx, dataAttr } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { cx, dataAttr } from "@chakra-v2/utils"
 import { useMemo } from "react"
 import { chakra, forwardRef, HTMLChakraProps, useStyleConfig } from "../system"
 import { useButtonGroup } from "./button-context"

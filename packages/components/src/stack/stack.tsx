@@ -1,5 +1,5 @@
-import { SystemProps } from "@chakra-ui/styled-system"
-import { cx, getValidChildren } from "@chakra-ui/utils"
+import { SystemProps } from "@chakra-v2/styled-system"
+import { cx, getValidChildren } from "@chakra-v2/utils"
 import { cloneElement, Fragment, useMemo } from "react"
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
 import { StackItem } from "./stack-item"

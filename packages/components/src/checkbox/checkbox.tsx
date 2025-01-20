@@ -2,8 +2,8 @@ import {
   SystemStyleObject,
   ThemingProps,
   omitThemingProps,
-} from "@chakra-ui/styled-system"
-import { callAll, compact, cx } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { callAll, compact, cx } from "@chakra-v2/utils"
 import { keyframes } from "@emotion/react"
 import { cloneElement, useMemo } from "react"
 import {

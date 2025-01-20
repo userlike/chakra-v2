@@ -2,7 +2,7 @@ module.exports = {
   App: `import {
   Kbd,
   Box, HStack, IconButton, useColorMode
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -45,7 +45,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 import App from "./App";
 import { kbdTheme } from "./theme/components/Kbd";
 const theme = extendTheme({
@@ -60,7 +60,7 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  KbdTheme: `import { defineStyle, defineStyleConfig } from '@chakra-ui/react'
+  KbdTheme: `import { defineStyle, defineStyleConfig } from '@chakra-v2/react'
 
 const baseStyle = defineStyle({
   borderRadius: 0, // disable the border radius

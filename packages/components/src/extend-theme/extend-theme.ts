@@ -4,8 +4,8 @@ import {
   baseTheme,
   isChakraTheme,
   theme,
-} from "@chakra-ui/theme"
-import { isArray, isObject, mergeWith } from "@chakra-ui/utils"
+} from "@chakra-v2/theme"
+import { isArray, isObject, mergeWith } from "@chakra-v2/utils"
 
 type CloneKey<Target, Key> = Key extends keyof Target ? Target[Key] : unknown
 
@@ -60,7 +60,7 @@ export type BaseThemeWithExtensions<
  * First extension overrides the baseTheme and following extensions override the preceding extensions.
  *
  * @example:
- * import { theme as baseTheme, extendTheme, withDefaultColorScheme } from '@chakra-ui/react'
+ * import { theme as baseTheme, extendTheme, withDefaultColorScheme } from '@chakra-v2/react'
  *
  * const customTheme = extendTheme(
  *   {

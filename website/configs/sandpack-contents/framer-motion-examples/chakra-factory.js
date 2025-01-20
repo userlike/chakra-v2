@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Container, chakra, shouldForwardProp } from '@chakra-ui/react';
+  App: `import { Container, chakra, shouldForwardProp } from '@chakra-v2/react';
 import { motion, isValidMotionProp } from 'framer-motion';
 
 const ChakraBox = chakra(motion.div, {
@@ -40,7 +40,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 
 import App from "./App";
 

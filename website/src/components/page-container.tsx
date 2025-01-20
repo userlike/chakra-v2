@@ -5,7 +5,7 @@ import {
   SkipNavContent,
   SkipNavLink,
   chakra,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import EditPageLink from 'components/edit-page-button'
 import Footer from 'components/footer'
 import Header from 'components/header'

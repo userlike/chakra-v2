@@ -8,7 +8,7 @@ module.exports = {
   AccordionItem,
   AccordionPanel,
   IconButton,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -68,7 +68,7 @@ export default function App() {
 `,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { accordionTheme } from "./theme/components/Accordion";
@@ -86,12 +86,12 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  AccordionTheme: `import { accordionAnatomy as parts } from "@chakra-ui/anatomy";
+  AccordionTheme: `import { accordionAnatomy as parts } from "@chakra-v2/anatomy";
 import {
   createMultiStyleConfigHelpers,
   defineStyle,
-} from "@chakra-ui/styled-system";
-import { extendTheme } from "@chakra-ui/react";
+} from "@chakra-v2/styled-system";
+import { extendTheme } from "@chakra-v2/react";
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys);

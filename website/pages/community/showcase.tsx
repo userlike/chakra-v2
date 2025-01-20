@@ -1,4 +1,4 @@
-import { SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { SimpleGrid, Stack, Text } from '@chakra-v2/react'
 
 import { t } from 'utils/i18n'
 import showcaseJson from 'configs/showcase.json'

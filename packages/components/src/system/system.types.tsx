@@ -2,7 +2,7 @@ import type {
   ResponsiveValue,
   SystemProps,
   SystemStyleObject,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 import type { Interpolation } from "@emotion/react"
 import { ElementType } from "react"
 

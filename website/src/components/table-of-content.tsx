@@ -5,7 +5,7 @@ import {
   ListItem,
   OrderedList,
   useColorModeValue,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { useScrollSpy } from 'hooks/use-scrollspy'
 import type { FrontmatterHeading } from 'src/types/frontmatter'
 import { t } from 'utils/i18n'

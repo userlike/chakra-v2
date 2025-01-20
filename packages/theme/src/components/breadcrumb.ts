@@ -1,9 +1,9 @@
-import { breadcrumbAnatomy as parts } from "@chakra-ui/anatomy"
+import { breadcrumbAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   createMultiStyleConfigHelpers,
   cssVar,
   defineStyle,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)

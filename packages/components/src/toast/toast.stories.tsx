@@ -1,5 +1,5 @@
-import { useLatestRef } from "@chakra-ui/hooks"
-import { theme as base } from "@chakra-ui/theme"
+import { useLatestRef } from "@chakra-v2/hooks"
+import { theme as base } from "@chakra-v2/theme"
 import * as React from "react"
 import { ToastId, createStandaloneToast, useToast } from "."
 import { Alert, Button, ButtonGroup, Text, chakra, useColorMode } from ".."

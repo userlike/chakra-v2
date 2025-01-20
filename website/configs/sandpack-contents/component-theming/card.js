@@ -9,7 +9,7 @@ module.exports = {
   CardHeader,
   Heading,
   Center,
-} from '@chakra-ui/react';
+} from '@chakra-v2/react';
 import theme from './theme';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
@@ -44,7 +44,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container!);
 
 root.render(<App />);`,
-  Theme: `import { extendTheme } from '@chakra-ui/react';
+  Theme: `import { extendTheme } from '@chakra-v2/react';
 import { cardTheme } from './components/Card';
 
 const theme = extendTheme({
@@ -54,8 +54,8 @@ const theme = extendTheme({
 });
 
 export default theme;`,
-  Card: `import { cardAnatomy } from '@chakra-ui/anatomy';
-import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react';
+  Card: `import { cardAnatomy } from '@chakra-v2/anatomy';
+import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-v2/react';
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(cardAnatomy.keys);
@@ -118,7 +118,7 @@ export const cardTheme = defineMultiStyleConfig({
     variant: "funky"
   },
 });`,
-  ColorModeSwitcher: `import { useColorMode, useColorModeValue, IconButton, IconButtonProps } from '@chakra-ui/react';
+  ColorModeSwitcher: `import { useColorMode, useColorModeValue, IconButton, IconButtonProps } from '@chakra-v2/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 export const ColorModeSwitcher = (props: IconButtonProps) => {

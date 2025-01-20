@@ -1,5 +1,5 @@
 import { useControllableState } from "./use-controllable-state"
-import { hooks, render, screen } from "@chakra-ui/test-utils"
+import { hooks, render, screen } from "@chakra-v2/test-utils"
 import { useState } from "react"
 
 test("should be uncontrolled when defaultValue is passed", () => {

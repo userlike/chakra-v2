@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, Container } from '@chakra-ui/react';
+  App: `import { Box, Container } from '@chakra-v2/react';
 import { keyframes } from '@emotion/react';
 import { motion } from 'framer-motion';
 
@@ -32,7 +32,7 @@ export default function App() {
 };`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 
 import App from "./App";
 

@@ -1,5 +1,5 @@
-import { defineStyle } from "@chakra-ui/styled-system"
-import { cx, getValidChildren } from "@chakra-ui/utils"
+import { defineStyle } from "@chakra-v2/styled-system"
+import { cx, getValidChildren } from "@chakra-v2/utils"
 import { cloneElement } from "react"
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
 import { useBreadcrumbStyles } from "./breadcrumb-context"

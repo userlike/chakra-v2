@@ -1,7 +1,7 @@
 module.exports = {
-  App: `import { Box, SimpleGrid, IconButton, Link, Text, useColorMode } from "@chakra-ui/react";
+  App: `import { Box, SimpleGrid, IconButton, Link, Text, useColorMode } from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { ExternalLinkIcon } from "@chakra-v2/icons";
 
 export default function App() {
   const { toggleColorMode, colorMode } = useColorMode();
@@ -42,7 +42,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { linkTheme } from "./theme/components/Link";
@@ -60,7 +60,7 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  LinkTheme: `import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+  LinkTheme: `import { defineStyle, defineStyleConfig } from "@chakra-v2/styled-system"
 
 const baseStyle = defineStyle({
   fontWeight: "normal", // change the font weight to normal

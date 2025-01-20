@@ -1,4 +1,4 @@
-import { Button, Icon } from '@chakra-ui/react'
+import { Button, Icon } from '@chakra-v2/react'
 import { useSandpack } from '@codesandbox/sandpack-react'
 import {
   RiFileAddLine,

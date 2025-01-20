@@ -1,6 +1,6 @@
-import { SystemProps } from "@chakra-ui/styled-system"
+import { SystemProps } from "@chakra-v2/styled-system"
 import { forwardRef, HTMLChakraProps } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { MenuCommand } from "./menu-command"
 import { MenuIcon } from "./menu-icon"
 import { StyledMenuItem } from "./styled-menu-item"

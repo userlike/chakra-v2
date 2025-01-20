@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, HStack, IconButton, Avatar, AvatarBadge, AvatarGroup, useColorMode } from "@chakra-ui/react";
+  App: `import { Box, HStack, IconButton, Avatar, AvatarBadge, AvatarGroup, useColorMode } from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -38,7 +38,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { avatarTheme } from "./theme/components/Avatar";
@@ -56,11 +56,11 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  AvatarTheme: `import { avatarAnatomy as parts } from "@chakra-ui/anatomy"
+  AvatarTheme: `import { avatarAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   createMultiStyleConfigHelpers,
   defineStyle,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)

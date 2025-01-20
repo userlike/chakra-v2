@@ -1,6 +1,6 @@
 module.exports = {
   App: `import { Prose } from "@nikolovlazar/chakra-ui-prose";
-import { Container } from "@chakra-ui/react";
+import { Container } from "@chakra-v2/react";
 
 export default function App() {
   return (
@@ -150,7 +150,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 import { withProse } from "@nikolovlazar/chakra-ui-prose";
 
 import App from "./App";

@@ -1,4 +1,4 @@
-import { defineStyle, SystemStyleObject } from "@chakra-ui/styled-system"
+import { defineStyle, SystemStyleObject } from "@chakra-v2/styled-system"
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
 import { useBreadcrumbStyles } from "./breadcrumb-context"
 

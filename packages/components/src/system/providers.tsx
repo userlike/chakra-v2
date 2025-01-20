@@ -1,10 +1,10 @@
-import { css, SystemStyleObject, toCSSVar } from "@chakra-ui/styled-system"
+import { css, SystemStyleObject, toCSSVar } from "@chakra-v2/styled-system"
 import {
   createContext,
   CreateContextReturn,
   memoizedGet as get,
   runIfFn,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import {
   ThemeProvider as EmotionThemeProvider,
   ThemeProviderProps as EmotionThemeProviderProps,
@@ -51,7 +51,7 @@ export function CSSVars({ root = ":host, :root" }: CSSVarsProps): JSX.Element {
  * @example
  *
  * ```jsx
- * import { createStylesContext } from "@chakra-ui/react"
+ * import { createStylesContext } from "@chakra-v2/react"
  *
  * const [StylesProvider, useStyles] = createStylesContext("Component")
  * ```

@@ -1,4 +1,4 @@
-import { render, screen } from "@chakra-ui/test-utils"
+import { render, screen } from "@chakra-v2/test-utils"
 import { Collapse } from "."
 
 describe("<Collapse />", () => {

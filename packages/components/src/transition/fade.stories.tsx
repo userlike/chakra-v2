@@ -1,4 +1,4 @@
-import { useBoolean } from "@chakra-ui/hooks"
+import { useBoolean } from "@chakra-v2/hooks"
 import { Fade, FadeProps } from "./fade"
 
 export default {

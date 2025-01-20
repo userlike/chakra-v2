@@ -1,4 +1,4 @@
-import { chakra, HTMLChakraProps, useSize } from '@chakra-ui/react'
+import { chakra, HTMLChakraProps, useSize } from '@chakra-v2/react'
 import { useRef } from 'react'
 
 export const InlineCode = (props: HTMLChakraProps<'code'>) => {

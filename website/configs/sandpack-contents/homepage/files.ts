@@ -1,5 +1,5 @@
 export const App = `import * as React from "react";
-import { Box, Center, Image, Flex, Badge, Text } from "@chakra-ui/react";
+import { Box, Center, Image, Flex, Badge, Text } from "@chakra-v2/react";
 import { MdStar } from "react-icons/md";
 
 export default function Example() {
@@ -36,7 +36,7 @@ export default function Example() {
 
 export const Index = `import * as React from "react";
 import * as ReactDOM from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 
 import App from "./App";
 

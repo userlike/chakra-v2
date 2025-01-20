@@ -1,5 +1,5 @@
-import { focus, render, screen, testA11y } from "@chakra-ui/test-utils"
-import { theme as baseTheme } from "@chakra-ui/theme"
+import { focus, render, screen, testA11y } from "@chakra-v2/test-utils"
+import { theme as baseTheme } from "@chakra-v2/theme"
 import styled from "@emotion/styled"
 import {
   Slider,

@@ -5,7 +5,7 @@ import {
   HStack,
   Text,
   ButtonGroup,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import {
   SandpackCodeViewer,
   SandpackThemeProvider,

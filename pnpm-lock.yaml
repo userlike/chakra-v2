@@ -35,16 +35,16 @@ importers:
       '@babel/runtime':
         specifier: ^7.22.10
         version: 7.22.10
-      '@chakra-ui/cli':
+      '@chakra-v2/cli':
         specifier: workspace:*
         version: link:packages/cli
-      '@chakra-ui/storybook-addon':
+      '@chakra-v2/storybook-addon':
         specifier: workspace:*
         version: link:packages/storybook-addon
-      '@chakra-ui/test-utils':
+      '@chakra-v2/test-utils':
         specifier: workspace:*
         version: link:packages/test-utils
-      '@chakra-ui/theme':
+      '@chakra-v2/theme':
         specifier: workspace:*
         version: link:packages/theme
       '@changesets/changelog-github':
@@ -257,7 +257,7 @@ importers:
 
   examples/create-react-app:
     dependencies:
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../../packages/components
       '@emotion/react':
@@ -309,10 +309,10 @@ importers:
 
   examples/gatsby:
     dependencies:
-      '@chakra-ui/gatsby-plugin':
+      '@chakra-v2/gatsby-plugin':
         specifier: workspace:*
         version: link:../../packages/gatsby-plugin
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../../packages/components
       '@emotion/react':
@@ -367,16 +367,16 @@ importers:
 
   examples/next-app:
     dependencies:
-      '@chakra-ui/icons':
+      '@chakra-v2/icons':
         specifier: workspace:*
         version: link:../../packages/icons
-      '@chakra-ui/next-js':
+      '@chakra-v2/next-js':
         specifier: workspace:*
         version: link:../../packages/next-js
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../../packages/components
-      '@chakra-ui/theme-tools':
+      '@chakra-v2/theme-tools':
         specifier: workspace:*
         version: link:../../packages/theme-tools
       '@emotion/react':
@@ -412,13 +412,13 @@ importers:
 
   examples/next-pages:
     dependencies:
-      '@chakra-ui/icons':
+      '@chakra-v2/icons':
         specifier: workspace:*
         version: link:../../packages/icons
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../../packages/components
-      '@chakra-ui/theme-tools':
+      '@chakra-v2/theme-tools':
         specifier: workspace:*
         version: link:../../packages/theme-tools
       '@emotion/react':
@@ -463,7 +463,7 @@ importers:
       '@babel/core':
         specifier: ^7.22.10
         version: 7.22.10
-      '@chakra-ui/storybook-addon':
+      '@chakra-v2/storybook-addon':
         specifier: workspace:*
         version: link:../../packages/storybook-addon
       '@storybook/addon-actions':
@@ -492,7 +492,7 @@ importers:
         specifier: ^18.2.0
         version: 18.2.0(react@18.2.0)
     devDependencies:
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../../packages/components
       '@types/react':
@@ -546,16 +546,16 @@ importers:
 
   packages/components:
     dependencies:
-      '@chakra-ui/hooks':
+      '@chakra-v2/hooks':
         specifier: workspace:*
         version: link:../hooks
-      '@chakra-ui/styled-system':
+      '@chakra-v2/styled-system':
         specifier: workspace:*
         version: link:../styled-system
-      '@chakra-ui/theme':
+      '@chakra-v2/theme':
         specifier: workspace:*
         version: link:../theme
-      '@chakra-ui/utils':
+      '@chakra-v2/utils':
         specifier: workspace:*
         version: link:../utils
       '@popperjs/core':
@@ -619,7 +619,7 @@ importers:
 
   packages/gatsby-plugin:
     devDependencies:
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../components
       gatsby:
@@ -628,7 +628,7 @@ importers:
 
   packages/hooks:
     dependencies:
-      '@chakra-ui/utils':
+      '@chakra-v2/utils':
         specifier: workspace:*
         version: link:../utils
       '@zag-js/element-size':
@@ -647,7 +647,7 @@ importers:
 
   packages/icons:
     devDependencies:
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../components
       '@types/react':
@@ -663,7 +663,7 @@ importers:
         specifier: ^11.11.0
         version: 11.11.0
     devDependencies:
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../components
       '@emotion/react':
@@ -691,7 +691,7 @@ importers:
 
   packages/storybook-addon:
     devDependencies:
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../components
       '@storybook/components':
@@ -712,14 +712,14 @@ importers:
 
   packages/styled-system:
     dependencies:
-      '@chakra-ui/utils':
+      '@chakra-v2/utils':
         specifier: workspace:*
         version: link:../utils
       csstype:
         specifier: ^3.1.2
         version: 3.1.2
     devDependencies:
-      '@chakra-ui/theme':
+      '@chakra-v2/theme':
         specifier: workspace:*
         version: link:../theme
       '@emotion/react':
@@ -731,13 +731,13 @@ importers:
 
   packages/test-utils:
     dependencies:
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../components
-      '@chakra-ui/theme':
+      '@chakra-v2/theme':
         specifier: workspace:*
         version: link:../theme
-      '@chakra-ui/utils':
+      '@chakra-v2/utils':
         specifier: workspace:*
         version: link:../utils
       '@testing-library/jest-dom':
@@ -759,36 +759,36 @@ importers:
 
   packages/theme:
     dependencies:
-      '@chakra-ui/anatomy':
+      '@chakra-v2/anatomy':
         specifier: workspace:*
         version: link:../anatomy
-      '@chakra-ui/theme-tools':
+      '@chakra-v2/theme-tools':
         specifier: workspace:*
         version: link:../theme-tools
-      '@chakra-ui/utils':
+      '@chakra-v2/utils':
         specifier: workspace:*
         version: link:../utils
     devDependencies:
-      '@chakra-ui/cli':
+      '@chakra-v2/cli':
         specifier: workspace:*
         version: link:../cli
-      '@chakra-ui/styled-system':
+      '@chakra-v2/styled-system':
         specifier: workspace:*
         version: link:../styled-system
 
   packages/theme-tools:
     dependencies:
-      '@chakra-ui/anatomy':
+      '@chakra-v2/anatomy':
         specifier: workspace:*
         version: link:../anatomy
-      '@chakra-ui/utils':
+      '@chakra-v2/utils':
         specifier: workspace:*
         version: link:../utils
       color2k:
         specifier: ^2.0.2
         version: 2.0.2
     devDependencies:
-      '@chakra-ui/styled-system':
+      '@chakra-v2/styled-system':
         specifier: workspace:*
         version: link:../styled-system
 
@@ -807,22 +807,22 @@ importers:
 
   website:
     dependencies:
-      '@chakra-ui/cli':
+      '@chakra-v2/cli':
         specifier: workspace:*
         version: link:../packages/cli
-      '@chakra-ui/icons':
+      '@chakra-v2/icons':
         specifier: workspace:*
         version: link:../packages/icons
-      '@chakra-ui/props-docs':
+      '@chakra-v2/props-docs':
         specifier: workspace:*
         version: link:../packages/props-docs
-      '@chakra-ui/react':
+      '@chakra-v2/react':
         specifier: workspace:*
         version: link:../packages/components
-      '@chakra-ui/theme-tools':
+      '@chakra-v2/theme-tools':
         specifier: workspace:*
         version: link:../packages/theme-tools
-      '@chakra-ui/utils':
+      '@chakra-v2/utils':
         specifier: workspace:*
         version: link:../packages/utils
       '@codesandbox/sandpack-react':
@@ -25541,7 +25541,7 @@ snapshots:
       eslint: 8.56.0
       eslint-import-resolver-node: 0.3.9
       eslint-import-resolver-typescript: 2.7.1(eslint-plugin-import@2.29.1)(eslint@8.56.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.29.1)(eslint@8.56.0))(eslint@8.56.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-typescript@2.7.1)(eslint@8.56.0)
       eslint-plugin-jsx-a11y: 6.8.0(eslint@8.56.0)
       eslint-plugin-react: 7.33.2(eslint@8.56.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.56.0)
@@ -25677,7 +25677,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.29.1)(eslint@8.56.0))(eslint@8.56.0):
+  eslint-module-utils@2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@2.7.1)(eslint@8.56.0):
     dependencies:
       debug: 3.2.7
     optionalDependencies:
@@ -25777,7 +25777,7 @@ snapshots:
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.29.1)(eslint@8.56.0))(eslint@8.56.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-typescript@2.7.1)(eslint@8.56.0):
     dependencies:
       array-includes: 3.1.7
       array.prototype.findlastindex: 1.2.3
@@ -25787,7 +25787,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 8.56.0
       eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@2.7.1(eslint-plugin-import@2.29.1)(eslint@8.56.0))(eslint@8.56.0)
+      eslint-module-utils: 2.8.0(@typescript-eslint/parser@5.62.0(eslint@8.56.0)(typescript@4.9.5))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@2.7.1)(eslint@8.56.0)
       hasown: 2.0.0
       is-core-module: 2.13.1
       is-glob: 4.0.3

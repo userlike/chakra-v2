@@ -1,6 +1,6 @@
 module.exports = {
   App: `import { useFormik } from "formik";
-import { Input, Button } from "@chakra-ui/react";
+import { Input, Button } from "@chakra-v2/react";
 
 export default function App() {
   const formik = useFormik({
@@ -28,7 +28,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 
 import App from "./App";
 

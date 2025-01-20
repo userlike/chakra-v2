@@ -7,7 +7,7 @@ module.exports = {
   AlertDescription,
   AlertIcon,
   AlertTitle,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
 `,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { alertTheme } from "./theme/components/Alert";
@@ -57,11 +57,11 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  AlertTheme: `import { alertAnatomy as parts } from "@chakra-ui/anatomy";
+  AlertTheme: `import { alertAnatomy as parts } from "@chakra-v2/anatomy";
 import {
   createMultiStyleConfigHelpers,
   defineStyle,
-} from "@chakra-ui/styled-system";
+} from "@chakra-v2/styled-system";
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys);

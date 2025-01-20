@@ -2,14 +2,14 @@ import {
   resolveStyleConfig,
   SystemStyleObject,
   ThemingProps,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 import {
   compact,
   Dict,
   memoizedGet as get,
   mergeWith,
   omit,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import { useRef } from "react"
 import isEqual from "react-fast-compare"
 import { useChakra } from "./hooks"

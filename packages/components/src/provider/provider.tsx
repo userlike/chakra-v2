@@ -1,6 +1,6 @@
 import { ColorModeProvider, ColorModeProviderProps } from "../color-mode"
 import { GlobalStyle, ThemeProvider, ThemeProviderProps } from "../system"
-import type { Dict } from "@chakra-ui/utils"
+import type { Dict } from "@chakra-v2/utils"
 import { CSSPolyfill, CSSReset } from "../css-reset"
 import { EnvironmentProvider, EnvironmentProviderProps } from "../env"
 import { PortalManager } from "../portal"

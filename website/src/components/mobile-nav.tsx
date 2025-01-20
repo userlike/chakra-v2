@@ -12,7 +12,7 @@ import {
   useBreakpointValue,
   useColorModeValue,
   useUpdateEffect,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { AnimatePresence, motion, useElementScroll } from 'framer-motion'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'

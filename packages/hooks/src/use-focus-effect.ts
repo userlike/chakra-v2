@@ -3,7 +3,7 @@ import {
   getActiveElement,
   getAllFocusable,
   isTabbable,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import type { RefObject } from "react"
 import { useCallback, useRef } from "react"
 import { useEventListener } from "./use-event-listener"

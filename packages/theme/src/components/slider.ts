@@ -1,11 +1,11 @@
-import { sliderAnatomy as parts } from "@chakra-ui/anatomy"
+import { sliderAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   calc,
   createMultiStyleConfigHelpers,
   cssVar,
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { orient } from "@chakra-ui/theme-tools"
+} from "@chakra-v2/styled-system"
+import { orient } from "@chakra-v2/theme-tools"
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)

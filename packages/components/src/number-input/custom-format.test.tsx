@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, waitFor } from "@chakra-ui/test-utils"
+import { fireEvent, render, screen, waitFor } from "@chakra-v2/test-utils"
 import {
   NumberDecrementStepper,
   NumberIncrementStepper,

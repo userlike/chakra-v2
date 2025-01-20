@@ -2,7 +2,7 @@ module.exports = {
   App: `import {
   Badge,
   Box, HStack, IconButton, useColorMode
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -33,7 +33,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 import App from "./App";
 import { badgeTheme } from "./theme/components/Badge";
 const theme = extendTheme({
@@ -48,7 +48,7 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  BadgeTheme: `import { defineStyle, defineStyleConfig } from '@chakra-ui/react'
+  BadgeTheme: `import { defineStyle, defineStyleConfig } from '@chakra-v2/react'
 
 const baseStyle = defineStyle({
   borderRadius: 0, // disable the border radius

@@ -1,4 +1,4 @@
-import { Flex, LinkBox, LinkOverlay, Text } from '@chakra-ui/react'
+import { Flex, LinkBox, LinkOverlay, Text } from '@chakra-v2/react'
 import NextImage from 'next/image'
 import NextLink from 'next/link'
 

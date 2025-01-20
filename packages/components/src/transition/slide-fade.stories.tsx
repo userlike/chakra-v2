@@ -1,4 +1,4 @@
-import { useBoolean } from "@chakra-ui/hooks"
+import { useBoolean } from "@chakra-v2/hooks"
 import { SlideFade, SlideFadeProps } from "."
 
 export default {

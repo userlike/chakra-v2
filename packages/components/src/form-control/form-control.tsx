@@ -1,10 +1,10 @@
-import { mergeRefs } from "@chakra-ui/hooks"
+import { mergeRefs } from "@chakra-v2/hooks"
 import {
   omitThemingProps,
   SystemStyleObject,
   ThemingProps,
-} from "@chakra-ui/styled-system"
-import { createContext, cx, dataAttr, PropGetter } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { createContext, cx, dataAttr, PropGetter } from "@chakra-v2/utils"
 import { useCallback, useId, useState } from "react"
 import {
   chakra,

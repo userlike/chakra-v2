@@ -1,4 +1,4 @@
-import { render, screen, testA11y } from "@chakra-ui/test-utils"
+import { render, screen, testA11y } from "@chakra-v2/test-utils"
 import { CloseButton } from "."
 
 test("passes a11y test", async () => {

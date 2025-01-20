@@ -1,6 +1,6 @@
 import { FormControl, FormLabel } from "../form-control"
 import { Icon } from "../icon"
-import { fireEvent, render, screen, testA11y } from "@chakra-ui/test-utils"
+import { fireEvent, render, screen, testA11y } from "@chakra-v2/test-utils"
 import * as React from "react"
 import {
   Checkbox,

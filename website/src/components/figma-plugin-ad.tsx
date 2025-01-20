@@ -1,4 +1,4 @@
-import { AspectRatio, Box, LinkBox, LinkOverlay, Stack } from '@chakra-ui/react'
+import { AspectRatio, Box, LinkBox, LinkOverlay, Stack } from '@chakra-v2/react'
 import Image from 'next/image'
 
 export function FigmaPluginAd({ medium }: { medium: string }) {

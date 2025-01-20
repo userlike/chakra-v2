@@ -1,5 +1,5 @@
-import { mergeRefs } from "@chakra-ui/hooks"
-import { PropGetter } from "@chakra-ui/utils"
+import { mergeRefs } from "@chakra-v2/hooks"
+import { PropGetter } from "@chakra-v2/utils"
 import {
   createPopper,
   Instance,

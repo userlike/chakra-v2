@@ -1,5 +1,5 @@
-import { cardAnatomy as parts } from "@chakra-ui/anatomy"
-import { createMultiStyleConfigHelpers, cssVar } from "@chakra-ui/styled-system"
+import { cardAnatomy as parts } from "@chakra-v2/anatomy"
+import { createMultiStyleConfigHelpers, cssVar } from "@chakra-v2/styled-system"
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)

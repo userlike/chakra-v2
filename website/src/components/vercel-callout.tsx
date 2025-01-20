@@ -1,4 +1,4 @@
-import { Box } from '@chakra-ui/react'
+import { Box } from '@chakra-v2/react'
 import { t } from 'utils/i18n'
 
 export const VercelCallout = () => (

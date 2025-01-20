@@ -1,5 +1,5 @@
-import { omitThemingProps, ThemingProps } from "@chakra-ui/styled-system"
-import { cx, runIfFn } from "@chakra-ui/utils"
+import { omitThemingProps, ThemingProps } from "@chakra-v2/styled-system"
+import { cx, runIfFn } from "@chakra-v2/utils"
 import {
   chakra,
   forwardRef,

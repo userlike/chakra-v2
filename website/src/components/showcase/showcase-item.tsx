@@ -4,7 +4,7 @@ import {
   LinkOverlay,
   Text,
   VStack,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { ChakraNextUnwrappedImage } from 'components/chakra-next-image'
 
 export const ShowcaseItem = ({ name, image, url }) => {

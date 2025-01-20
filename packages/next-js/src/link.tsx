@@ -5,7 +5,7 @@ import {
   chakra,
   omitThemingProps,
   useStyleConfig,
-} from "@chakra-ui/react"
+} from "@chakra-v2/react"
 import NextLink, { LinkProps as NextLinkProps } from "next/link"
 import { forwardRef, type FC, type RefAttributes } from "react"
 import { interopDefault } from "./interop"

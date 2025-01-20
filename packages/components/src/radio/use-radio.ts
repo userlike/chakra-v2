@@ -4,7 +4,7 @@ import {
   dataAttr,
   InputDOMAttributes,
   PropGetter,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import { trackFocusVisible } from "@zag-js/focus-visible"
 import { useCallback, useEffect, useId, useState } from "react"
 import { useFormControlContext } from "../form-control"

@@ -1,4 +1,4 @@
-import { Button, Heading, Text, VStack } from '@chakra-ui/react'
+import { Button, Heading, Text, VStack } from '@chakra-v2/react'
 import NextLink from 'next/link'
 import * as React from 'react'
 import { FaHome } from 'react-icons/fa'

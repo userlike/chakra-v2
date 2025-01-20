@@ -1,5 +1,5 @@
-import { omitThemingProps, ThemingProps } from "@chakra-ui/styled-system"
-import { cx, getValidChildren } from "@chakra-ui/utils"
+import { omitThemingProps, ThemingProps } from "@chakra-v2/styled-system"
+import { cx, getValidChildren } from "@chakra-v2/utils"
 import { cloneElement } from "react"
 import { chakra, forwardRef, HTMLChakraProps, useStyleConfig } from "../system"
 import {

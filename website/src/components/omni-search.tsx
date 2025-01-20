@@ -1,4 +1,4 @@
-import { SearchIcon } from '@chakra-ui/icons'
+import { SearchIcon } from '@chakra-v2/icons'
 import {
   Box,
   Center,
@@ -11,7 +11,7 @@ import {
   useDisclosure,
   useEventListener,
   useUpdateEffect,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { findAll } from 'highlight-words-core'
 import { matchSorter } from 'match-sorter'
 import Link from 'next/link'

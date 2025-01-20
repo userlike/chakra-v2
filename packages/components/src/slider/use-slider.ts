@@ -5,8 +5,8 @@ import {
   useLatestRef,
   usePanEvent,
   useUpdateEffect,
-} from "@chakra-ui/hooks"
-import type { PropGetter, RequiredPropGetter } from "@chakra-ui/utils"
+} from "@chakra-v2/hooks"
+import type { PropGetter, RequiredPropGetter } from "@chakra-v2/utils"
 import {
   ariaAttr,
   callAllHandlers,
@@ -15,7 +15,7 @@ import {
   percentToValue,
   roundValueToStep,
   valueToPercent,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import { useCallback, useId, useMemo, useRef, useState } from "react"
 import { getIsReversed, getStyles } from "./slider-utils"
 

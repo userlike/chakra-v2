@@ -1,4 +1,4 @@
-import { Box, HStack, Stack } from '@chakra-ui/react'
+import { Box, HStack, Stack } from '@chakra-v2/react'
 import { MDXComponents } from 'components/mdx-components'
 import { Doc } from 'contentlayer/generated'
 import { useMDXComponent } from 'next-contentlayer/hooks'

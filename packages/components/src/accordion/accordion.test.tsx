@@ -1,4 +1,4 @@
-import { focus, render, screen, testA11y } from "@chakra-ui/test-utils"
+import { focus, render, screen, testA11y } from "@chakra-v2/test-utils"
 import { Accordion, AccordionButton, AccordionItem, AccordionPanel } from "."
 
 test("passes a11y test", async () => {

@@ -1,6 +1,6 @@
 // @ts-ignore - This file is not meant to be executed
-import { Provider as ChakraProvider } from "@chakra-ui/react/provider"
-import { theme } from "@chakra-ui/theme"
+import { Provider as ChakraProvider } from "@chakra-v2/react/provider"
+import { theme } from "@chakra-v2/theme"
 import "@testing-library/jest-dom/vitest"
 import { RenderOptions, render as rtlRender } from "@testing-library/react"
 import user from "@testing-library/user-event"

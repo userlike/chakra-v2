@@ -1,4 +1,4 @@
-import { createContext } from "@chakra-ui/utils/context"
+import { createContext } from "@chakra-v2/utils/context"
 import { CheckboxGroupContext } from "./checkbox-types"
 
 export const [CheckboxGroupProvider, useCheckboxGroupContext] =

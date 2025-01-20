@@ -1,4 +1,4 @@
-import { Button, Center, DarkMode, Link, Stack, Text } from '@chakra-ui/react'
+import { Button, Center, DarkMode, Link, Stack, Text } from '@chakra-v2/react'
 import { getUrl } from './get-url'
 
 export const BlackFridayBanner = () => (

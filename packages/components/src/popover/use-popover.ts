@@ -6,7 +6,7 @@ import {
   useFocusOnPointerDown,
   useFocusOnShow,
   useOutsideClick,
-} from "@chakra-ui/hooks"
+} from "@chakra-v2/hooks"
 import {
   DOMAttributes,
   LazyMode,
@@ -14,7 +14,7 @@ import {
   callAllHandlers,
   isFocusable,
   lazyDisclosure,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import { useCallback, useEffect, useId, useRef, useState } from "react"
 import { UsePopperProps, popperCSSVars, usePopper } from "../popper"
 

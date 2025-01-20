@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, IconButton, Center, Tag, useColorMode } from "@chakra-ui/react";
+  App: `import { Box, IconButton, Center, Tag, useColorMode } from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -30,7 +30,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 import App from "./App";
 import { tagTheme } from "./theme/components/Tag";
 const theme = extendTheme({
@@ -45,8 +45,8 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  TagTheme: `import { tagAnatomy } from "@chakra-ui/anatomy";
-import { createMultiStyleConfigHelpers, defineStyle } from "@chakra-ui/react";
+  TagTheme: `import { tagAnatomy } from "@chakra-v2/anatomy";
+import { createMultiStyleConfigHelpers, defineStyle } from "@chakra-v2/react";
 
 const {
   definePartsStyle,

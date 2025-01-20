@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, SimpleGrid, IconButton, useColorMode, TableContainer, Table, Tr, Td, Th, Thead, Tbody, Tfoot, TableCaption, } from "@chakra-ui/react";
+  App: `import { Box, SimpleGrid, IconButton, useColorMode, TableContainer, Table, Tr, Td, Th, Thead, Tbody, Tfoot, TableCaption, } from "@chakra-v2/react";
 import { FaMoon, FaSun, FaPhone } from "react-icons/fa";
 
 export default function App() {
@@ -56,7 +56,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { tableTheme } from "./theme/components/Table";
@@ -74,11 +74,11 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  TableTheme: `import { tableAnatomy as parts } from "@chakra-ui/anatomy";
+  TableTheme: `import { tableAnatomy as parts } from "@chakra-v2/anatomy";
 import {
   createMultiStyleConfigHelpers,
   defineStyle,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)

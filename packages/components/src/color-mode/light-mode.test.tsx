@@ -1,5 +1,5 @@
 import * as React from "react"
-import { render, screen } from "@chakra-ui/test-utils"
+import { render, screen } from "@chakra-v2/test-utils"
 import { LightMode } from "."
 import {
   DummyComponent,

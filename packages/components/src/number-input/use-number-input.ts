@@ -6,13 +6,13 @@ import {
   useEventListener,
   useSafeLayoutEffect,
   useUpdateEffect,
-} from "@chakra-ui/hooks"
+} from "@chakra-v2/hooks"
 import {
   InputDOMAttributes,
   PropGetter,
   ariaAttr,
   callAllHandlers,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import { useCallback, useMemo, useRef, useState } from "react"
 import { useAttributeObserver } from "./use-attr-observer"
 import { useSpinner } from "./use-spinner"

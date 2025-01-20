@@ -5,7 +5,7 @@ import {
   screen,
   testA11y,
   waitFor,
-} from "@chakra-ui/test-utils"
+} from "@chakra-v2/test-utils"
 import * as React from "react"
 import { Tooltip, TooltipProps } from "."
 

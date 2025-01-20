@@ -8,7 +8,7 @@ import {
   VStack,
   Wrap,
   WrapItem,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import * as React from 'react'
 
 export interface Resource {

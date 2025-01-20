@@ -1,4 +1,4 @@
-import { createIcon } from "@chakra-ui/react"
+import { createIcon } from "@chakra-v2/react"
 
 export const CheckIcon = createIcon({
   viewBox: "0 0 14 14",

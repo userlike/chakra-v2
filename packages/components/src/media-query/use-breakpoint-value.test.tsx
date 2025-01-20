@@ -1,5 +1,5 @@
 import { ThemeProvider } from "../system"
-import { render, screen } from "@chakra-ui/test-utils"
+import { render, screen } from "@chakra-v2/test-utils"
 import MatchMediaMock from "vitest-matchmedia-mock"
 import { useBreakpointValue } from "."
 import { queries, theme } from "./breakpoint.fixture"

@@ -4,7 +4,7 @@ import { LinkProps as NextLinkProps } from "next/dist/client/link"
 import {
   Link as ChakraLink,
   LinkProps as ChakraLinkProps,
-} from "@chakra-ui/react"
+} from "@chakra-v2/react"
 
 export type NextChakraLinkProps = PropsWithChildren<
   NextLinkProps & Omit<ChakraLinkProps, "as">

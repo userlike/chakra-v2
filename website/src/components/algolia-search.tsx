@@ -1,4 +1,4 @@
-import { SearchIcon } from '@chakra-ui/icons'
+import { SearchIcon } from '@chakra-v2/icons'
 import {
   HStack,
   HTMLChakraProps,
@@ -7,7 +7,7 @@ import {
   Text,
   VisuallyHidden,
   chakra,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { DocSearchModal, useDocSearchKeyboardEvents } from '@docsearch/react'
 import type {
   InternalDocSearchHit,

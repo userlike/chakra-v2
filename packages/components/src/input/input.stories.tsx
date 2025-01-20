@@ -1,4 +1,4 @@
-import { useDisclosure } from "@chakra-ui/hooks"
+import { useDisclosure } from "@chakra-v2/hooks"
 import * as React from "react"
 import { FaCheck, FaPhone } from "react-icons/fa"
 import {

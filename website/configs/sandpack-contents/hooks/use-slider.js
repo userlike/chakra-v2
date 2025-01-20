@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Badge, Box, Button, chakra, Flex, useSlider, Text } from "@chakra-ui/react";
+  App: `import { Badge, Box, Button, chakra, Flex, useSlider, Text } from "@chakra-v2/react";
 import Actions from "./Actions";
 import Instructions from "./Instructions";
 type Props = {
@@ -87,7 +87,7 @@ export default function App({stepByNumber, stepToNumber}: Props) {
         </Box>
     );
 };`,
-  Index: `import { ChakraProvider } from "@chakra-ui/react";
+  Index: `import { ChakraProvider } from "@chakra-v2/react";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
@@ -102,7 +102,7 @@ root.render(
         </ChakraProvider>
     </React.StrictMode>
 );`,
-  Instructions: `import { Text, Kbd } from "@chakra-ui/react";
+  Instructions: `import { Text, Kbd } from "@chakra-v2/react";
 type Props = {
     stepByNumber: number;
 };
@@ -117,7 +117,7 @@ const Instructions = ({ stepByNumber }: Props) => {
         );
 };
 export default Instructions;`,
-  Actions: `import { Button } from "@chakra-ui/react";
+  Actions: `import { Button } from "@chakra-v2/react";
 type Props = {
     actions: {
         stepUp(step?: number): void;

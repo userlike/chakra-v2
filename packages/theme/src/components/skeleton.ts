@@ -2,7 +2,7 @@ import {
   cssVar,
   defineStyle,
   defineStyleConfig,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 
 const $startColor = cssVar("skeleton-start-color")
 const $endColor = cssVar("skeleton-end-color")

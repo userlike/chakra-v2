@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/next-js",
+  "name": "@chakra-v2/next-js",
   "version": "2.4.3",
   "description": "Chakra UI Integrations for Next.js 13",
   "keywords": [
@@ -39,13 +39,13 @@
     "@emotion/cache": "^11.11.0"
   },
   "peerDependencies": {
-    "@chakra-ui/react": ">=2.4.0",
+    "@chakra-v2/react": ">=2.4.0",
     "@emotion/react": ">=11",
     "next": ">=13",
     "react": ">=18"
   },
   "devDependencies": {
-    "@chakra-ui/react": "workspace:*",
+    "@chakra-v2/react": "workspace:*",
     "@emotion/react": "^11.11.1",
     "next": ">=14",
     "react": "^18.2.0"

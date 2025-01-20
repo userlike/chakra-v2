@@ -1,4 +1,4 @@
-import { baseTheme } from "@chakra-ui/theme"
+import { baseTheme } from "@chakra-v2/theme"
 import type { ChakraProviderProps } from "./provider/create-provider"
 import { createProvider } from "./provider/create-provider"
 

@@ -11,7 +11,7 @@ module.exports = {
   MenuDivider,
   Box,
   Center,
-} from '@chakra-ui/react';
+} from '@chakra-v2/react';
 import theme from './theme';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
@@ -90,7 +90,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container!);
 
 root.render(<App />);`,
-  Theme: `import { extendTheme } from '@chakra-ui/react';
+  Theme: `import { extendTheme } from '@chakra-v2/react';
 import { menuTheme } from './components/Menu';
 
 const theme = extendTheme({
@@ -100,8 +100,8 @@ const theme = extendTheme({
 });
 
 export default theme;`,
-  Menu: `import { menuAnatomy } from '@chakra-ui/anatomy';
-import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react';
+  Menu: `import { menuAnatomy } from '@chakra-v2/anatomy';
+import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-v2/react';
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(menuAnatomy.keys);
@@ -211,7 +211,7 @@ export const menuTheme = defineMultiStyleConfig({
     size: 'xl',
   },
 });`,
-  ColorModeSwitcher: `import { useColorMode, useColorModeValue, IconButton, IconButtonProps } from '@chakra-ui/react';
+  ColorModeSwitcher: `import { useColorMode, useColorModeValue, IconButton, IconButtonProps } from '@chakra-v2/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 export const ColorModeSwitcher = (props: IconButtonProps) => {

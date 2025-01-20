@@ -1,4 +1,4 @@
-import * as Chakra from '@chakra-ui/react'
+import * as Chakra from '@chakra-v2/react'
 import {
   ColorPalette,
   ColorPalettes,

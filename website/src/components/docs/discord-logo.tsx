@@ -1,4 +1,4 @@
-import { Icon, IconProps } from '@chakra-ui/react'
+import { Icon, IconProps } from '@chakra-v2/react'
 
 const DiscordIcon = (props: IconProps) => (
   <Icon viewBox='0 0 48 48' {...props}>

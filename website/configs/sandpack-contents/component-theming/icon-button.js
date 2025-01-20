@@ -6,7 +6,7 @@ module.exports = {
   useColorMode,
   SimpleGrid,
   Icon
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import "./styles.css";
@@ -77,7 +77,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { buttonTheme } from "./theme/components/IconButton";
@@ -95,7 +95,7 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  IconButtonTheme: `import { defineStyle, defineStyleConfig, transform } from "@chakra-ui/react";
+  IconButtonTheme: `import { defineStyle, defineStyleConfig, transform } from "@chakra-v2/react";
 
 const outline = defineStyle({
   color: "white",

@@ -1,5 +1,5 @@
-import { ThemingProps } from "@chakra-ui/styled-system"
-import { createContext } from "@chakra-ui/utils"
+import { ThemingProps } from "@chakra-v2/styled-system"
+import { createContext } from "@chakra-v2/utils"
 import { useTheme } from "../system"
 import { SlideOptions } from "../transition"
 import { Modal, ModalProps } from "./modal"

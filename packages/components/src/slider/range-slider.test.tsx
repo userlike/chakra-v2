@@ -4,7 +4,7 @@ import {
   render,
   screen,
   testA11y,
-} from "@chakra-ui/test-utils"
+} from "@chakra-v2/test-utils"
 import {
   RangeSlider,
   RangeSliderFilledTrack,

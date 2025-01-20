@@ -1,5 +1,5 @@
 "use client"
-import { Button, useColorMode } from "@chakra-ui/react"
+import { Button, useColorMode } from "@chakra-v2/react"
 
 export function ColorModeToggle() {
   const { toggleColorMode } = useColorMode()

@@ -1,4 +1,4 @@
-import { ResponsiveValue } from "@chakra-ui/styled-system"
+import { ResponsiveValue } from "@chakra-v2/styled-system"
 import { HTMLChakraProps, chakra } from "../system"
 
 import { rotate } from "./progress.utils"

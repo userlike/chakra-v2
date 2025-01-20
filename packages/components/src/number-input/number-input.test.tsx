@@ -7,7 +7,7 @@ import {
   hooks,
   screen,
   waitFor,
-} from "@chakra-ui/test-utils"
+} from "@chakra-v2/test-utils"
 import {
   NumberDecrementStepper,
   NumberIncrementStepper,

@@ -1,4 +1,4 @@
-import { fireEvent, render } from "@chakra-ui/test-utils"
+import { fireEvent, render } from "@chakra-v2/test-utils"
 import * as React from "react"
 import { useOutsideClick } from "./use-outside-click"
 

@@ -1,4 +1,4 @@
-import { BoxProps, chakra, Stack } from '@chakra-ui/react'
+import { BoxProps, chakra, Stack } from '@chakra-v2/react'
 import { ReactNode, RefObject, useEffect, useRef, useState } from 'react'
 
 interface SidebarCategoryProps extends BoxProps {

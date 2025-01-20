@@ -5,8 +5,8 @@ import {
   screen,
   testA11y,
   waitFor,
-} from "@chakra-ui/test-utils"
-import { theme } from "@chakra-ui/theme"
+} from "@chakra-v2/test-utils"
+import { theme } from "@chakra-v2/theme"
 import * as React from "react"
 import { FaSearch, FaTruck, FaUndoAlt, FaUnlink } from "react-icons/fa"
 import {

@@ -1,4 +1,4 @@
-import { Box, BoxProps } from '@chakra-ui/react'
+import { Box, BoxProps } from '@chakra-v2/react'
 import {
   CodeEditorProps,
   PreviewProps,
@@ -39,8 +39,8 @@ const SandpackEmbed = ({
       customSetup={{
         dependencies: {
           'react-icons': '3.11.0',
-          '@chakra-ui/react': 'v2-latest',
-          '@chakra-ui/icons': 'v2-latest',
+          '@chakra-v2/react': 'v2-latest',
+          '@chakra-v2/icons': 'v2-latest',
           '@emotion/react': '^11.7.0',
           '@emotion/styled': '^11.6.0',
           'framer-motion': '^4.1.17',

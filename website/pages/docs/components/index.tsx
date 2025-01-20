@@ -7,7 +7,7 @@ import {
   SimpleGrid,
   Text,
   VStack,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { ComponentOverviewItem } from 'components/component-overview-item'
 import MDXLayout from 'layouts/mdx'
 import type { GetStaticProps } from 'next'

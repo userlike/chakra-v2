@@ -7,7 +7,7 @@ import {
   List,
   ListItem,
   ListProps,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import { Fragment, ReactElement, ReactNode, useRef } from 'react'

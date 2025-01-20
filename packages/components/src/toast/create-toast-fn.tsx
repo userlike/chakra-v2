@@ -1,4 +1,4 @@
-import { runIfFn } from "@chakra-ui/utils"
+import { runIfFn } from "@chakra-v2/utils"
 import {
   createRenderToast,
   MaybeFunction,

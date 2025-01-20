@@ -1,4 +1,4 @@
-import { getCSSVar } from "@chakra-ui/styled-system"
+import { getCSSVar } from "@chakra-v2/styled-system"
 import {
   toHex,
   parseToRgba,

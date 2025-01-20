@@ -6,7 +6,7 @@ import {
   MenuGroup,
   MenuItem,
   MenuList,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { ReactNode } from 'react'

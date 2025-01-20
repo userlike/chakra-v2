@@ -1,4 +1,4 @@
-import { render } from "@chakra-ui/test-utils"
+import { render } from "@chakra-v2/test-utils"
 import * as React from "react"
 import MatchMediaMock from "vitest-matchmedia-mock"
 import { Skeleton, SkeletonText } from "."

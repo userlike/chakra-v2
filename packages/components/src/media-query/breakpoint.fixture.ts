@@ -1,4 +1,4 @@
-import { theme as baseTheme } from "@chakra-ui/theme"
+import { theme as baseTheme } from "@chakra-v2/theme"
 
 export const breakpoints = {
   base: "0px",

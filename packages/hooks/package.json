@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/hooks",
+  "name": "@chakra-v2/hooks",
   "version": "2.4.3",
   "description": "React hooks for Chakra components",
   "keywords": [
@@ -30,7 +30,7 @@
     "url": "https://github.com/chakra-ui/chakra-ui/issues"
   },
   "dependencies": {
-    "@chakra-ui/utils": "workspace:*",
+    "@chakra-v2/utils": "workspace:*",
     "@zag-js/element-size": "0.31.1",
     "copy-to-clipboard": "3.3.3",
     "framesync": "6.1.2"

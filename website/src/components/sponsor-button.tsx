@@ -1,4 +1,4 @@
-import { Box, BoxProps, Icon } from '@chakra-ui/react'
+import { Box, BoxProps, Icon } from '@chakra-v2/react'
 import React from 'react'
 import { FaHeart } from 'react-icons/fa'
 import siteConfig from 'configs/site-config.json'

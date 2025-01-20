@@ -1,5 +1,5 @@
 import React from "react"
-import { ColorModeScript } from "@chakra-ui/react"
+import { ColorModeScript } from "@chakra-v2/react"
 import { WrapRootElement } from "./src/provider"
 import theme from "./src/theme"
 

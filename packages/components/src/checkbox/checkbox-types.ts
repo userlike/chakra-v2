@@ -1,4 +1,4 @@
-import { SystemProps, ThemingProps } from "@chakra-ui/styled-system"
+import { SystemProps, ThemingProps } from "@chakra-v2/styled-system"
 import { UseCheckboxGroupReturn } from "./use-checkbox-group"
 
 export interface UseCheckboxGroupProps {

@@ -1,4 +1,4 @@
-import { Heading, Wrap, WrapItem } from "@chakra-ui/react"
+import { Heading, Wrap, WrapItem } from "@chakra-v2/react"
 import { Layout } from "../../components/Layout"
 import { properties } from "../../utils/sample-data"
 import { PropertySummary } from "../../components/PropertySummary"

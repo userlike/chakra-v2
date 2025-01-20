@@ -1,4 +1,4 @@
-import { useDisclosure } from "@chakra-ui/hooks"
+import { useDisclosure } from "@chakra-v2/hooks"
 import { motion, Variants } from "framer-motion"
 import { usePopper } from "."
 

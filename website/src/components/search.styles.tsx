@@ -1,4 +1,4 @@
-import { Theme } from '@chakra-ui/react'
+import { Theme } from '@chakra-v2/react'
 import { Global, css } from '@emotion/react'
 
 const SearchStyle = () => (

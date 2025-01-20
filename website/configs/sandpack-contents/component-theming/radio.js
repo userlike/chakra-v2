@@ -5,7 +5,7 @@ module.exports = {
   Radio,
   Heading,
   VStack,
-} from '@chakra-ui/react';
+} from '@chakra-v2/react';
 import theme from './theme';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
@@ -31,7 +31,7 @@ const container = document.getElementById('root');
 const root = ReactDOM.createRoot(container!);
 
 root.render(<App />);`,
-  Theme: `import { extendTheme } from '@chakra-ui/react';
+  Theme: `import { extendTheme } from '@chakra-v2/react';
 import { radioTheme } from './components/Radio';
 
 const theme = extendTheme({
@@ -41,8 +41,8 @@ const theme = extendTheme({
 });
 
 export default theme;`,
-  Radio: `import { radioAnatomy } from '@chakra-ui/anatomy';
-import { createMultiStyleConfigHelpers } from '@chakra-ui/react';
+  Radio: `import { radioAnatomy } from '@chakra-v2/anatomy';
+import { createMultiStyleConfigHelpers } from '@chakra-v2/react';
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(radioAnatomy.keys);
@@ -107,7 +107,7 @@ export const radioTheme = defineMultiStyleConfig({
   sizes,
   variants,
 });`,
-  ColorModeSwitcher: `import { useColorMode, useColorModeValue, IconButton, IconButtonProps } from '@chakra-ui/react';
+  ColorModeSwitcher: `import { useColorMode, useColorModeValue, IconButton, IconButtonProps } from '@chakra-v2/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 
 export const ColorModeSwitcher = (props: IconButtonProps) => {

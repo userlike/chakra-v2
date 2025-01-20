@@ -5,7 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "@babel/core": "^7.22.10",
-    "@chakra-ui/storybook-addon": "workspace:*",
+    "@chakra-v2/storybook-addon": "workspace:*",
     "@storybook/addon-actions": "^7.3.2",
     "@storybook/react": "^7.3.2"
   },

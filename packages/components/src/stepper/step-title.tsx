@@ -1,4 +1,4 @@
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { HTMLChakraProps, chakra, forwardRef } from "../system"
 import { useStepContext, useStepperStyles } from "./step-context"
 

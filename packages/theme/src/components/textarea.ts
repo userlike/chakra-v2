@@ -1,4 +1,4 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+import { defineStyle, defineStyleConfig } from "@chakra-v2/styled-system"
 import { inputTheme } from "./input"
 
 const baseStyle = defineStyle({

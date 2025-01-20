@@ -1,5 +1,5 @@
-import { SystemStyleObject } from "@chakra-ui/styled-system"
-import { createContext } from "@chakra-ui/utils"
+import { SystemStyleObject } from "@chakra-v2/styled-system"
+import { createContext } from "@chakra-v2/utils"
 import { UseEditableReturn } from "./use-editable"
 
 export const [EditableStylesProvider, useEditableStyles] = createContext<

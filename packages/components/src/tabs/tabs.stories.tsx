@@ -1,4 +1,4 @@
-import { useInterval } from "@chakra-ui/hooks"
+import { useInterval } from "@chakra-v2/hooks"
 import { Drawer, DrawerBody, DrawerContent, DrawerOverlay } from "../modal"
 import { chakra } from "../system"
 import * as React from "react"

@@ -1,4 +1,4 @@
-import { Badge, Box, Flex, HStack, Heading, Text } from '@chakra-ui/react'
+import { Badge, Box, Flex, HStack, Heading, Text } from '@chakra-v2/react'
 import NextImage from 'next/image'
 import * as React from 'react'
 import { FiArrowRight } from 'react-icons/fi'

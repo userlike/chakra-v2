@@ -1,4 +1,4 @@
-import { Box, chakra } from '@chakra-ui/react'
+import { Box, chakra } from '@chakra-v2/react'
 import NextImage from 'next/image'
 import * as React from 'react'
 interface TweetCardProps {

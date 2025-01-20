@@ -1,5 +1,5 @@
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { useEditableContext, useEditableStyles } from "./editable-context"
 import { commonStyles } from "./shared"
 

@@ -1,6 +1,6 @@
-import { defineStyle } from "@chakra-ui/styled-system"
+import { defineStyle } from "@chakra-v2/styled-system"
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { useMemo } from "react"
 import { AccordionItemProvider, useAccordionStyles } from "./accordion-context"
 import { useAccordionItem, UseAccordionItemProps } from "./use-accordion"

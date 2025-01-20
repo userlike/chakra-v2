@@ -10,7 +10,7 @@ import {
   VisuallyHidden,
   Wrap,
   WrapItem,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import fs from 'fs'
 import MDXLayout from 'layouts/mdx'
 import NextImage from 'next/image'

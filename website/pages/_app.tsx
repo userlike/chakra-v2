@@ -1,4 +1,4 @@
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-v2/react'
 import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
 import React from 'react'

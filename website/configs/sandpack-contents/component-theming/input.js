@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, SimpleGrid, GridItem, Icon, IconButton, Input, InputGroup, InputLeftAddon, InputRightElement, useColorMode } from "@chakra-ui/react";
+  App: `import { Box, SimpleGrid, GridItem, Icon, IconButton, Input, InputGroup, InputLeftAddon, InputRightElement, useColorMode } from "@chakra-v2/react";
 import { FaMoon, FaSun, FaPhone } from "react-icons/fa";
 
 export default function App() {
@@ -34,7 +34,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { inputTheme } from "./theme/components/Input";
@@ -52,11 +52,11 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  InputTheme: `import { inputAnatomy as parts } from "@chakra-ui/anatomy"
+  InputTheme: `import { inputAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   createMultiStyleConfigHelpers,
   defineStyle,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)

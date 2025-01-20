@@ -1,4 +1,4 @@
-import { Button, ButtonProps, useClipboard } from '@chakra-ui/react'
+import { Button, ButtonProps, useClipboard } from '@chakra-v2/react'
 import React from 'react'
 import { t } from 'utils/i18n'
 

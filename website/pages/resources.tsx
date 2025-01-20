@@ -16,7 +16,7 @@ import {
   Tabs,
   Text,
   chakra,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { useFormik } from 'formik'
 import NextLink from 'next/link'
 import * as React from 'react'

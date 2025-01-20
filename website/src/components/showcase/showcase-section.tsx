@@ -5,7 +5,7 @@ import {
   SimpleGrid,
   chakra,
   VStack,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import NextLink from 'next/link'
 import { FaArrowRight } from 'react-icons/fa'
 

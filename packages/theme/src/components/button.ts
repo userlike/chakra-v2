@@ -1,5 +1,5 @@
-import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
-import { mode, transparentize } from "@chakra-ui/theme-tools"
+import { defineStyle, defineStyleConfig } from "@chakra-v2/styled-system"
+import { mode, transparentize } from "@chakra-v2/theme-tools"
 import { runIfFn } from "../utils/run-if-fn"
 
 const baseStyle = defineStyle({

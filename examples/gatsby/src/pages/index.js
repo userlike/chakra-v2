@@ -13,7 +13,7 @@ import {
   InputRightElement,
   Stack,
   Container,
-} from "@chakra-ui/react"
+} from "@chakra-v2/react"
 
 import Layout from "../components/layout"
 import GatsbyImage from "../components/image"

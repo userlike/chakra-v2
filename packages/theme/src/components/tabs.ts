@@ -1,10 +1,10 @@
-import { tabsAnatomy as parts } from "@chakra-ui/anatomy"
+import { tabsAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   createMultiStyleConfigHelpers,
   cssVar,
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { getColor } from "@chakra-ui/theme-tools"
+} from "@chakra-v2/styled-system"
+import { getColor } from "@chakra-v2/theme-tools"
 
 const $fg = cssVar("tabs-color")
 const $bg = cssVar("tabs-bg")

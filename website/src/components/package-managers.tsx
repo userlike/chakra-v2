@@ -6,7 +6,7 @@ import {
   TabPanel,
   TabPanels,
   Tabs,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { ImNpm } from 'react-icons/im'
 import { FaYarn } from 'react-icons/fa'
 import { SiPnpm } from 'react-icons/si'

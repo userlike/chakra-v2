@@ -1,4 +1,4 @@
-import { Box, BoxProps } from '@chakra-ui/react'
+import { Box, BoxProps } from '@chakra-v2/react'
 
 function CodeContainer(props: BoxProps) {
   return (

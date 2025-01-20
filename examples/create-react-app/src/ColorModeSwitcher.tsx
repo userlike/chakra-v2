@@ -4,7 +4,7 @@ import {
   useColorModeValue,
   IconButton,
   IconButtonProps,
-} from "@chakra-ui/react"
+} from "@chakra-v2/react"
 import { FaMoon, FaSun } from "react-icons/fa"
 
 export const ColorModeSwitcher = (

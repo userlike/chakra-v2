@@ -1,11 +1,11 @@
-import { omitThemingProps, ThemingProps } from "@chakra-ui/styled-system"
+import { omitThemingProps, ThemingProps } from "@chakra-v2/styled-system"
 import {
   chakra,
   forwardRef,
   HTMLChakraProps,
   useMultiStyleConfig,
 } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { useMemo } from "react"
 import {
   AccordionDescendantsProvider,

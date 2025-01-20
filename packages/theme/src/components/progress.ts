@@ -1,9 +1,9 @@
-import { progressAnatomy as parts } from "@chakra-ui/anatomy"
+import { progressAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   createMultiStyleConfigHelpers,
   defineStyle,
-} from "@chakra-ui/styled-system"
-import { generateStripe, getColor, mode } from "@chakra-ui/theme-tools"
+} from "@chakra-v2/styled-system"
+import { generateStripe, getColor, mode } from "@chakra-v2/theme-tools"
 
 const { defineMultiStyleConfig, definePartsStyle } =
   createMultiStyleConfigHelpers(parts.keys)

@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/styled-system",
+  "name": "@chakra-v2/styled-system",
   "version": "2.12.1",
   "description": "Style function for css-in-js building component libraries",
   "keywords": [
@@ -35,11 +35,11 @@
     "url": "https://github.com/chakra-ui/chakra-ui/issues"
   },
   "dependencies": {
-    "@chakra-ui/utils": "workspace:*",
+    "@chakra-v2/utils": "workspace:*",
     "csstype": "^3.1.2"
   },
   "devDependencies": {
-    "@chakra-ui/theme": "workspace:*",
+    "@chakra-v2/theme": "workspace:*",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0"
   },

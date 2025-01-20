@@ -28,7 +28,7 @@ module.exports = {
       },
     },
     {
-      resolve: "@chakra-ui/gatsby-plugin",
+      resolve: "@chakra-v2/gatsby-plugin",
       // See the plugin's README for all available options
       options: {},
     },

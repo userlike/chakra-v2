@@ -1,5 +1,5 @@
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { useBreadcrumbStyles } from "./breadcrumb-context"
 
 export interface BreadcrumbLinkProps extends HTMLChakraProps<"a"> {

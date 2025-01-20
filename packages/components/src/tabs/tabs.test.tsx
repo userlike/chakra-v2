@@ -1,4 +1,4 @@
-import { fireEvent, render, screen, testA11y } from "@chakra-ui/test-utils"
+import { fireEvent, render, screen, testA11y } from "@chakra-v2/test-utils"
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "."
 
 test("should no accessibility issues", async () => {

@@ -1,4 +1,4 @@
-import { omitThemingProps, ThemingProps } from "@chakra-ui/styled-system"
+import { omitThemingProps, ThemingProps } from "@chakra-v2/styled-system"
 import { Box } from "../box/box"
 import { forwardRef, HTMLChakraProps, useStyleConfig } from "../system"
 

@@ -1,4 +1,4 @@
-import { isObject, mergeWith, runIfFn } from "@chakra-ui/utils"
+import { isObject, mergeWith, runIfFn } from "@chakra-v2/utils"
 import * as CSS from "csstype"
 import { pseudoSelectors } from "./pseudos"
 import { systemProps as systemPropConfigs } from "./system"

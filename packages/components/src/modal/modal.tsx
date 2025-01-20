@@ -1,5 +1,5 @@
-import { SystemStyleObject, ThemingProps } from "@chakra-ui/styled-system"
-import { createContext } from "@chakra-ui/utils"
+import { SystemStyleObject, ThemingProps } from "@chakra-v2/styled-system"
+import { createContext } from "@chakra-v2/utils"
 import { AnimatePresence, AnimatePresenceProps } from "framer-motion"
 import { FocusLockProps } from "../focus-lock"
 import { Portal, PortalProps } from "../portal"

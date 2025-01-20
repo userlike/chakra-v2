@@ -1,6 +1,6 @@
-import { ResponsiveValue, SystemStyleObject } from "@chakra-ui/styled-system"
+import { ResponsiveValue, SystemStyleObject } from "@chakra-v2/styled-system"
 import { HTMLChakraProps, chakra, forwardRef } from "../system"
-import { mapResponsive } from "@chakra-ui/utils"
+import { mapResponsive } from "@chakra-v2/utils"
 import { useMemo } from "react"
 
 type Dict = Record<string, any>

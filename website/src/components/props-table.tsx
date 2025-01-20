@@ -1,5 +1,5 @@
-import { getPropDoc } from '@chakra-ui/props-docs'
-import { chakra, Code, Flex, HStack, Stack } from '@chakra-ui/react'
+import { getPropDoc } from '@chakra-v2/props-docs'
+import { chakra, Code, Flex, HStack, Stack } from '@chakra-v2/react'
 import { InlineCode } from 'components/mdx-components/inline-code'
 import * as React from 'react'
 import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'

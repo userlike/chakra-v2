@@ -1,4 +1,4 @@
-import { render, testA11y } from "@chakra-ui/test-utils"
+import { render, testA11y } from "@chakra-v2/test-utils"
 import { Textarea } from "."
 
 test("Textarea renders correctly", async () => {

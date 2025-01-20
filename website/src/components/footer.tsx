@@ -6,7 +6,7 @@ import {
   VStack,
   chakra,
   StackProps,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import React from 'react'
 import { DiGithubBadge } from 'react-icons/di'
 import { FaYoutube } from 'react-icons/fa'

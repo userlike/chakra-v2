@@ -1,4 +1,4 @@
-import { chakra } from '@chakra-ui/react'
+import { chakra } from '@chakra-v2/react'
 import * as React from 'react'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

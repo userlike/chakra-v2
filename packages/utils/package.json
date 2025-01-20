@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/utils",
+  "name": "@chakra-v2/utils",
   "version": "2.2.3",
   "description": "Common utilities and types for Chakra UI",
   "author": "Segun Adebayo <sage@adebayosegun.com>",

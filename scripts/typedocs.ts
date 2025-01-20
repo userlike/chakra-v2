@@ -1,4 +1,4 @@
-import { theme } from "@chakra-ui/theme"
+import { theme } from "@chakra-v2/theme"
 import { existsSync } from "node:fs"
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises"
 import path from "node:path"

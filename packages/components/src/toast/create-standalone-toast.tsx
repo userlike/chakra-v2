@@ -1,4 +1,4 @@
-import { theme as defaultTheme } from "@chakra-ui/theme"
+import { theme as defaultTheme } from "@chakra-v2/theme"
 import { ColorModeContext, type ColorMode } from "../color-mode"
 import { ThemeProvider, useChakra } from "../system"
 import { CreateToastFnReturn, createToastFn } from "./create-toast-fn"

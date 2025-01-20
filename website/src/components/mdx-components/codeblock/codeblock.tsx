@@ -1,4 +1,4 @@
-import { Box, useBoolean } from '@chakra-ui/react'
+import { Box, useBoolean } from '@chakra-v2/react'
 import dynamic from 'next/dynamic'
 import theme from 'prism-react-renderer/themes/nightOwl'
 import React, { useEffect } from 'react'

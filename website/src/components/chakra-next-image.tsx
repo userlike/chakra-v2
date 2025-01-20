@@ -1,4 +1,4 @@
-import { chakra, Flex, type FlexProps } from '@chakra-ui/react'
+import { chakra, Flex, type FlexProps } from '@chakra-v2/react'
 import NextImage from 'next/image'
 import type { ImageLoaderProps, ImageProps } from 'next/image'
 

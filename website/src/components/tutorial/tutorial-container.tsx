@@ -11,7 +11,7 @@ import {
   Text,
   VStack,
   chakra,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import {
   SandpackCodeEditor,
   SandpackLayout,
@@ -68,7 +68,7 @@ function TutorialContainer({
   const { title, description, editUrl } = frontmatter
 
   const dependenciesNames = [
-    '@chakra-ui/react',
+    '@chakra-v2/react',
     'typescript',
     '@emotion/react',
     '@emotion/styled',

@@ -1,5 +1,5 @@
 import { Global, ThemeProvider } from "@emotion/react"
-import { theme as defaultTheme } from "@chakra-ui/theme"
+import { theme as defaultTheme } from "@chakra-v2/theme"
 import styled from "@emotion/styled"
 import { css, resolveStyleConfig, toCSSVar } from "."
 import { recipe } from "../tests/theme"

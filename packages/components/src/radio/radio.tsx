@@ -4,8 +4,8 @@ import {
   ThemingProps,
   layoutPropNames,
   omitThemingProps,
-} from "@chakra-ui/styled-system"
-import { callAll, split } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { callAll, split } from "@chakra-v2/utils"
 import {
   HTMLChakraProps,
   chakra,

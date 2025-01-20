@@ -1,6 +1,6 @@
-import { SystemProps } from "@chakra-ui/styled-system"
+import { SystemProps } from "@chakra-v2/styled-system"
 import { chakra, forwardRef, HTMLChakraProps } from "../system"
-import { omit } from "@chakra-ui/utils"
+import { omit } from "@chakra-v2/utils"
 import { NativeImage, NativeImageOptions } from "./native-image"
 import {
   FallbackStrategy,

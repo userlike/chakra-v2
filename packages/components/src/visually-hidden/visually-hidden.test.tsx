@@ -1,4 +1,4 @@
-import { render, testA11y } from "@chakra-ui/test-utils"
+import { render, testA11y } from "@chakra-v2/test-utils"
 import { VisuallyHidden } from "."
 
 test("should render correctly", async () => {

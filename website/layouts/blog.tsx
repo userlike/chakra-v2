@@ -1,4 +1,4 @@
-import { Avatar, Box, HStack, Text } from '@chakra-ui/react'
+import { Avatar, Box, HStack, Text } from '@chakra-v2/react'
 import * as React from 'react'
 import MDXLayout from './mdx'
 

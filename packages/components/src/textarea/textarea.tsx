@@ -1,5 +1,5 @@
-import { ThemingProps, omitThemingProps } from "@chakra-ui/styled-system"
-import { cx, omit } from "@chakra-ui/utils"
+import { ThemingProps, omitThemingProps } from "@chakra-v2/styled-system"
+import { cx, omit } from "@chakra-v2/utils"
 import { FormControlOptions, useFormControl } from "../form-control"
 import { HTMLChakraProps, chakra, forwardRef, useStyleConfig } from "../system"
 

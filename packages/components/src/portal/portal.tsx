@@ -1,5 +1,5 @@
-import { useSafeLayoutEffect } from "@chakra-ui/hooks"
-import { createContext } from "@chakra-ui/utils"
+import { useSafeLayoutEffect } from "@chakra-v2/hooks"
+import { createContext } from "@chakra-v2/utils"
 import { useEffect, useMemo, useRef, useState } from "react"
 import { createPortal } from "react-dom"
 import { usePortalManager } from "./portal-manager"

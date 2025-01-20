@@ -1,5 +1,5 @@
 import * as React from "react"
-import { render, fireEvent, screen, waitFor } from "@chakra-ui/test-utils"
+import { render, fireEvent, screen, waitFor } from "@chakra-v2/test-utils"
 import {
   usePinInput,
   usePinInputField,

@@ -10,7 +10,7 @@ module.exports = {
   SimpleGrid,
   useColorMode,
   Text
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -75,7 +75,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 import App from "./App";
 import { numberInputTheme } from "./theme/components/NumberInput";
 const theme = extendTheme({
@@ -90,8 +90,8 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  NumberInputTheme: `import { numberInputAnatomy } from "@chakra-ui/anatomy";
-import { createMultiStyleConfigHelpers } from "@chakra-ui/react";
+  NumberInputTheme: `import { numberInputAnatomy } from "@chakra-v2/anatomy";
+import { createMultiStyleConfigHelpers } from "@chakra-v2/react";
 
 const {
   definePartsStyle,

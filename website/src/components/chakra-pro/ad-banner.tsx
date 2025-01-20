@@ -1,4 +1,4 @@
-import { Center, Flex, Text, chakra } from '@chakra-ui/react'
+import { Center, Flex, Text, chakra } from '@chakra-v2/react'
 import { getUrl } from './get-url'
 import { t } from 'utils/i18n'
 

@@ -1,4 +1,4 @@
-import { Image, ImageProps, usePrefersReducedMotion } from "@chakra-ui/react"
+import { Image, ImageProps, usePrefersReducedMotion } from "@chakra-v2/react"
 import { keyframes } from "@emotion/react"
 import logo from "./logo.svg"
 

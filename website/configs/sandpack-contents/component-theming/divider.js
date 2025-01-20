@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { Box, SimpleGrid, IconButton, Center, Divider, useColorMode } from "@chakra-ui/react";
+  App: `import { Box, SimpleGrid, IconButton, Center, Divider, useColorMode } from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 export default function App() {
     const { toggleColorMode, colorMode } = useColorMode();
@@ -33,7 +33,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 import App from "./App";
 import { dividerTheme } from "./theme/components/Divider";
 const theme = extendTheme({
@@ -48,7 +48,7 @@ root.render(
         <App />
     </ChakraProvider>
 );`,
-  DividerTheme: `import { defineStyle, defineStyleConfig } from "@chakra-ui/styled-system"
+  DividerTheme: `import { defineStyle, defineStyleConfig } from "@chakra-v2/styled-system"
 
 const brandPrimary = defineStyle({
     borderWidth: '3px',

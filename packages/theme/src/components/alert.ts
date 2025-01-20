@@ -1,10 +1,10 @@
-import { alertAnatomy as parts } from "@chakra-ui/anatomy"
+import { alertAnatomy as parts } from "@chakra-v2/anatomy"
 import {
   createMultiStyleConfigHelpers,
   cssVar,
   StyleFunctionProps,
-} from "@chakra-ui/styled-system"
-import { transparentize } from "@chakra-ui/theme-tools"
+} from "@chakra-v2/styled-system"
+import { transparentize } from "@chakra-v2/theme-tools"
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys)

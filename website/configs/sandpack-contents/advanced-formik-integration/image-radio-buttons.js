@@ -8,7 +8,7 @@ import {
   ImageProps,
   chakra,
   useRadioGroupContext,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import * as React from "react";
 
 type Props = UseRadioProps &
@@ -57,7 +57,7 @@ export default ImageRadio;`,
 import {
   RadioGroup as ChakraRadioGroup,
   RadioGroupProps as ChakraRadioGroupProps,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import * as React from "react";
 
 type Props = ChakraRadioGroupProps;
@@ -89,7 +89,7 @@ export default RadioGroup;`,
 import {
   Input as ChakraInput,
   InputProps as ChakraInputProps,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 
 type Props = ChakraInputProps & FieldHookConfig<"input">;
 
@@ -100,7 +100,7 @@ const Input = ({ name, ...props }: Props) => {
 
 export default Input;`,
 
-  App: `import { Box, Button } from "@chakra-ui/react";
+  App: `import { Box, Button } from "@chakra-v2/react";
 import { Formik, FormikProps } from "formik";
 
 import Input from "./input";
@@ -145,7 +145,7 @@ export default function App() {
 }`,
   Index: `import * as React from "react";
 import { createRoot } from "react-dom/client";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 
 import App from "./App";
 

@@ -86,7 +86,7 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts)
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts)
       import { BaseThemeTypings } from "./shared.types.js"
       export interface ThemeTypings extends BaseThemeTypings {
         blur: string & {}
@@ -146,7 +146,7 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts)
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts)
       import { BaseThemeTypings } from "./shared.types.js"
       export interface ThemeTypings extends BaseThemeTypings {
         blur: string & {}
@@ -185,7 +185,7 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts)
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts)
       import { BaseThemeTypings } from "./shared.types.js"
       export interface ThemeTypings extends BaseThemeTypings {
         blur: string & {}
@@ -243,7 +243,7 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts)
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts)
       import { BaseThemeTypings } from "./shared.types.js"
       export interface ThemeTypings extends BaseThemeTypings {
         blur: (string & {});
@@ -324,7 +324,7 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts)
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts)
       import { BaseThemeTypings } from "./shared.types.js"
       export interface ThemeTypings extends BaseThemeTypings {
         blur: string & {}
@@ -373,7 +373,7 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts)
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts)
       import { BaseThemeTypings } from "./shared.types.js"
       export interface ThemeTypings extends BaseThemeTypings {
         blur: never
@@ -431,7 +431,7 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts)
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts)
       import { BaseThemeTypings } from "./shared.types.js"
       export interface ThemeTypings extends BaseThemeTypings {
         blur: never
@@ -488,9 +488,9 @@ describe("Theme typings", () => {
 
     expect(themeInterface).toMatchInlineSnapshot(`
       "// regenerate by running
-      // npx @chakra-ui/cli tokens path/to/your/theme.(js|ts) --template augmentation --out path/to/this/file
-      import { BaseThemeTypings } from "@chakra-ui/styled-system"
-      declare module "@chakra-ui/styled-system" {
+      // npx @chakra-v2/cli tokens path/to/your/theme.(js|ts) --template augmentation --out path/to/this/file
+      import { BaseThemeTypings } from "@chakra-v2/styled-system"
+      declare module "@chakra-v2/styled-system" {
         export interface CustomThemeTypings extends BaseThemeTypings {
           blur: string & {}
           borders: "sm" | "md" | (string & {})

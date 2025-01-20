@@ -1,5 +1,5 @@
-import { mergeRefs } from "@chakra-ui/hooks"
-import { createContext } from "@chakra-ui/utils"
+import { mergeRefs } from "@chakra-v2/hooks"
+import { createContext } from "@chakra-v2/utils"
 import { useRef, useState } from "react"
 import { DescendantOptions, DescendantsManager } from "./descendant"
 import { cast, useSafeLayoutEffect } from "./utils"

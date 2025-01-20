@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/react",
+  "name": "@chakra-v2/react",
   "version": "2.10.4",
   "description": "Responsive and accessible React UI components built with React and Emotion",
   "main": "dist/cjs/index.cjs",
@@ -37,10 +37,10 @@
     "url": "https://storybook.chakra-ui.com"
   },
   "dependencies": {
-    "@chakra-ui/hooks": "workspace:*",
-    "@chakra-ui/styled-system": "workspace:*",
-    "@chakra-ui/theme": "workspace:*",
-    "@chakra-ui/utils": "workspace:*",
+    "@chakra-v2/hooks": "workspace:*",
+    "@chakra-v2/styled-system": "workspace:*",
+    "@chakra-v2/theme": "workspace:*",
+    "@chakra-v2/utils": "workspace:*",
     "@popperjs/core": "^2.11.8",
     "@zag-js/focus-visible": "^0.31.1",
     "aria-hidden": "^1.2.3",

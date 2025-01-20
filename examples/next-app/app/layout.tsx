@@ -1,4 +1,4 @@
-import { ColorModeScript } from "@chakra-ui/react"
+import { ColorModeScript } from "@chakra-v2/react"
 import Provider from "./provider"
 
 export default function RootLayout({

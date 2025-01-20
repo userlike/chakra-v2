@@ -1,6 +1,6 @@
-import { render, testA11y } from "@chakra-ui/test-utils"
+import { render, testA11y } from "@chakra-v2/test-utils"
 import { FormControl } from "../form-control"
-// import { theme } from "@chakra-ui/theme"
+// import { theme } from "@chakra-v2/theme"
 import { Select } from "."
 
 test("should pass a11y check", async () => {

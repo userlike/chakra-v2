@@ -3,14 +3,14 @@ import {
   SystemProps,
   SystemStyleObject,
   ThemingProps,
-} from "@chakra-ui/styled-system"
+} from "@chakra-v2/styled-system"
 import {
   chakra,
   forwardRef,
   HTMLChakraProps,
   useMultiStyleConfig,
 } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { useMemo } from "react"
 import { useCheckbox, UseCheckboxProps } from "../checkbox"
 

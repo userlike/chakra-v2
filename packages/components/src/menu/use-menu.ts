@@ -8,7 +8,7 @@ import {
   useIds,
   useOutsideClick,
   useUpdateEffect,
-} from "@chakra-ui/hooks"
+} from "@chakra-v2/hooks"
 import {
   callAllHandlers,
   createContext,
@@ -16,7 +16,7 @@ import {
   getValidChildren,
   lazyDisclosure,
   LazyMode,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import {
   cloneElement,
   useCallback,

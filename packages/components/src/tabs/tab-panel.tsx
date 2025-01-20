@@ -1,5 +1,5 @@
 import { HTMLChakraProps, chakra, forwardRef } from "../system"
-import { cx } from "@chakra-ui/utils"
+import { cx } from "@chakra-v2/utils"
 import { useTabsStyles } from "./tabs"
 import { useTabPanel } from "./use-tabs"
 

@@ -1,5 +1,5 @@
 module.exports = {
-  App: `import { useColorMode,IconButton, StatGroup, Box, Stat, StatArrow, StatHelpText, StatLabel, StatNumber } from "@chakra-ui/react";
+  App: `import { useColorMode,IconButton, StatGroup, Box, Stat, StatArrow, StatHelpText, StatLabel, StatNumber } from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function App() {
@@ -39,7 +39,7 @@ export default function App() {
   );
 }`,
   Index: `import { createRoot } from "react-dom/client";
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-v2/react";
 
 import App from "./App";
 import { statTheme } from "./theme/components/Stat";
@@ -57,8 +57,8 @@ root.render(
     <App />
   </ChakraProvider>
 );`,
-  StatTheme: `import { statAnatomy } from '@chakra-ui/anatomy'
-import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
+  StatTheme: `import { statAnatomy } from '@chakra-v2/anatomy'
+import { createMultiStyleConfigHelpers } from '@chakra-v2/react'
 
 const { definePartsStyle, defineMultiStyleConfig } =
 createMultiStyleConfigHelpers(statAnatomy.keys)

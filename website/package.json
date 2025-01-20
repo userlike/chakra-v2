@@ -1,5 +1,5 @@
 {
-  "name": "@chakra-ui/docs",
+  "name": "@chakra-v2/docs",
   "version": "2.1.6",
   "scripts": {
     "dev": "next",
@@ -20,12 +20,12 @@
     "content": "contentlayer build --clearCache"
   },
   "dependencies": {
-    "@chakra-ui/cli": "workspace:*",
-    "@chakra-ui/icons": "workspace:*",
-    "@chakra-ui/props-docs": "workspace:*",
-    "@chakra-ui/react": "workspace:*",
-    "@chakra-ui/theme-tools": "workspace:*",
-    "@chakra-ui/utils": "workspace:*",
+    "@chakra-v2/cli": "workspace:*",
+    "@chakra-v2/icons": "workspace:*",
+    "@chakra-v2/props-docs": "workspace:*",
+    "@chakra-v2/react": "workspace:*",
+    "@chakra-v2/theme-tools": "workspace:*",
+    "@chakra-v2/utils": "workspace:*",
     "@codesandbox/sandpack-react": "2.13.8",
     "@codesandbox/sandpack-themes": "2.0.21",
     "@docsearch/react": "^1.0.0-alpha.27",

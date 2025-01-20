@@ -1,6 +1,6 @@
 module.exports = {
   App: `import * as React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider } from "@chakra-v2/react";
 import { createColumnHelper } from "@tanstack/react-table";
 import { DataTable } from "./DataTable";
 
@@ -64,8 +64,8 @@ const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 root.render(<App />);`,
   DataTable: `import * as React from "react";
-import { Table, Thead, Tbody, Tr, Th, Td, chakra } from "@chakra-ui/react";
-import { TriangleDownIcon, TriangleUpIcon } from "@chakra-ui/icons";
+import { Table, Thead, Tbody, Tr, Th, Td, chakra } from "@chakra-v2/react";
+import { TriangleDownIcon, TriangleUpIcon } from "@chakra-v2/icons";
 import {
   useReactTable,
   flexRender,

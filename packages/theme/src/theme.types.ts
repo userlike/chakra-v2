@@ -5,8 +5,8 @@ import type {
   StyleObjectOrFn,
   SystemStyleInterpolation,
   ThemingProps,
-} from "@chakra-ui/styled-system"
-import { Styles } from "@chakra-ui/theme-tools"
+} from "@chakra-v2/styled-system"
+import { Styles } from "@chakra-v2/theme-tools"
 
 type ColorMode = "light" | "dark"
 type Dict = Record<string, any>

@@ -3,9 +3,9 @@ import {
   useCallbackRef,
   useSafeLayoutEffect,
   useUpdateEffect,
-} from "@chakra-ui/hooks"
-import type { PropGetter } from "@chakra-ui/utils"
-import { callAllHandlers, dataAttr, omit } from "@chakra-ui/utils"
+} from "@chakra-v2/hooks"
+import type { PropGetter } from "@chakra-v2/utils"
+import { callAllHandlers, dataAttr, omit } from "@chakra-v2/utils"
 import { trackFocusVisible } from "@zag-js/focus-visible"
 import { useCallback, useEffect, useRef, useState } from "react"
 import { useFormControlProps } from "../form-control"

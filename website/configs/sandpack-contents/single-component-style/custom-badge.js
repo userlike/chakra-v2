@@ -10,8 +10,8 @@ import {
   chakra,
   HTMLChakraProps,
   ThemingProps
-} from "@chakra-ui/react";
-import { StyleConfig } from "@chakra-ui/theme-tools";
+} from "@chakra-v2/react";
+import { StyleConfig } from "@chakra-v2/theme-tools";
 
 // 1. define component configuration
 const components: Record<string, StyleConfig> = {
@@ -69,7 +69,7 @@ export default function App() {
     </>
   );
 }`,
-  Index: `import { ChakraProvider } from "@chakra-ui/react";
+  Index: `import { ChakraProvider } from "@chakra-v2/react";
 import { createRoot } from "react-dom/client";
 
 import App, { customTheme } from "./App";

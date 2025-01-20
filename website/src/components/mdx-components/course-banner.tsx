@@ -1,4 +1,4 @@
-import { Box, SimpleGrid, Text } from '@chakra-ui/react'
+import { Box, SimpleGrid, Text } from '@chakra-v2/react'
 import NextImage from 'next/image'
 
 const CourseBanner = ({

@@ -17,7 +17,7 @@ module.exports = {
   AvatarBadge,
   VStack,
   StackDivider,
-} from "@chakra-ui/react";
+} from "@chakra-v2/react";
 import { FaMoon, FaSun } from "react-icons/fa";
 
 const CustomButton = ({ label, notifications, colorMode }) => (
@@ -208,11 +208,11 @@ export default function App() {
     </Box>
   );
 }`,
-  Index: `import { ChakraProvider } from "@chakra-ui/react";
+  Index: `import { ChakraProvider } from "@chakra-v2/react";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import { extendTheme } from "@chakra-ui/react";
+import { extendTheme } from "@chakra-v2/react";
 import { popoverTheme } from "./theme/components/Popover";
 export const theme = extendTheme({
   components: { Popover: popoverTheme }
@@ -226,9 +226,9 @@ root.render(
     </ChakraProvider>
   </React.StrictMode>
 );`,
-  PopoverTheme: `import { popoverAnatomy as parts } from "@chakra-ui/anatomy";
-import { createMultiStyleConfigHelpers } from "@chakra-ui/styled-system";
-import { mode } from "@chakra-ui/theme-tools";
+  PopoverTheme: `import { popoverAnatomy as parts } from "@chakra-v2/anatomy";
+import { createMultiStyleConfigHelpers } from "@chakra-v2/styled-system";
+import { mode } from "@chakra-v2/theme-tools";
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(parts.keys);

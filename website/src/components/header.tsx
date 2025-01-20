@@ -11,7 +11,7 @@ import {
   useColorModeValue,
   useDisclosure,
   useUpdateEffect,
-} from '@chakra-ui/react'
+} from '@chakra-v2/react'
 import { useScroll } from 'framer-motion'
 import NextLink from 'next/link'
 import { useEffect, useRef, useState } from 'react'

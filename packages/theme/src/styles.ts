@@ -1,4 +1,4 @@
-import { Styles } from "@chakra-ui/theme-tools"
+import { Styles } from "@chakra-v2/theme-tools"
 
 export const styles: Styles = {
   global: {

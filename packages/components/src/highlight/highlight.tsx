@@ -1,4 +1,4 @@
-import { SystemStyleObject } from "@chakra-ui/styled-system"
+import { SystemStyleObject } from "@chakra-v2/styled-system"
 import { Fragment } from "react"
 import { Chunk } from "./highlight-words"
 import { Mark } from "./mark"

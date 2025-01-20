@@ -2,8 +2,8 @@ import {
   omitThemingProps,
   SystemStyleObject,
   ThemingProps,
-} from "@chakra-ui/styled-system"
-import { compact, createContext, cx, getValidChildren } from "@chakra-ui/utils"
+} from "@chakra-v2/styled-system"
+import { compact, createContext, cx, getValidChildren } from "@chakra-v2/utils"
 import { cloneElement } from "react"
 import {
   chakra,

@@ -2,14 +2,14 @@ import {
   mergeRefs,
   useControllableState,
   useSafeLayoutEffect,
-} from "@chakra-ui/hooks"
+} from "@chakra-v2/hooks"
 import {
   callAllHandlers,
   createContext,
   getValidChildren,
   lazyDisclosure,
   LazyMode,
-} from "@chakra-ui/utils"
+} from "@chakra-v2/utils"
 import {
   createElement,
   useCallback,

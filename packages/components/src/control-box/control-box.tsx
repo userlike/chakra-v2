@@ -1,4 +1,4 @@
-import { SystemStyleObject } from "@chakra-ui/styled-system"
+import { SystemStyleObject } from "@chakra-v2/styled-system"
 import { chakra, HTMLChakraProps } from "../system"
 
 export interface ControlBoxOptions {

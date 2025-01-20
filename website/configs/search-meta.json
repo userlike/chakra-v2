@@ -325,13 +325,13 @@
     "hierarchy": { "lvl1": "The as prop and Custom component" }
   },
   {
-    "content": "Option 1: Using `forwardRef` from `@chakra-ui/react`",
+    "content": "Option 1: Using `forwardRef` from `@chakra-v2/react`",
     "id": "/community/recipes/as-prop",
     "type": "lvl2",
     "url": "/community/recipes/as-prop#option-1-using-forwardref-from-chakra-uireact",
     "hierarchy": {
       "lvl1": "The as prop and Custom component",
-      "lvl2": "Option 1: Using `forwardRef` from `@chakra-ui/react`",
+      "lvl2": "Option 1: Using `forwardRef` from `@chakra-v2/react`",
       "lvl3": null
     }
   },

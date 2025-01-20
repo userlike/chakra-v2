@@ -1,4 +1,4 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Text } from "@chakra-v2/react"
 import { ColorModeToggle } from "../components/color-mode-toggle"
 
 export default async function Page() {

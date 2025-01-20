@@ -1,4 +1,4 @@
-import { render, screen } from "@chakra-ui/test-utils"
+import { render, screen } from "@chakra-v2/test-utils"
 import { ColorModeProvider, useColorMode, useColorModeValue } from "."
 import { defaultThemeOptions, mockMatchMedia } from "./test.fixture"
 

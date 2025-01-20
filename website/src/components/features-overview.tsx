@@ -1,4 +1,4 @@
-import { Flex, Heading, Icon, SimpleGrid, Stack, Text } from '@chakra-ui/react'
+import { Flex, Heading, Icon, SimpleGrid, Stack, Text } from '@chakra-v2/react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import {

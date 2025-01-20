@@ -1,4 +1,4 @@
-import { useDisclosure } from "@chakra-ui/hooks"
+import { useDisclosure } from "@chakra-v2/hooks"
 import { chakra } from "../system"
 import * as React from "react"
 //@ts-ignore

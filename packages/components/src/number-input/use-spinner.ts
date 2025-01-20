@@ -1,4 +1,4 @@
-import { useInterval } from "@chakra-ui/hooks"
+import { useInterval } from "@chakra-v2/hooks"
 import { useCallback, useEffect, useRef, useState } from "react"
 
 /**
