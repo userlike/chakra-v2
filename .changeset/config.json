@@ -13,7 +13,7 @@
     "onlyUpdatePeerDependentsWhenOutOfRange": true
   },
   "ignore": [
-    "@chakra-ui/docs",
+    "@chakra-v2/docs",
     "create-react-app-ts",
     "gatsby-starter-default",
     "chakra-next-app",
