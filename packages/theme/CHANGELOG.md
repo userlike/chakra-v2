@@ -1,5 +1,19 @@
 # Change Log
 
+## 4.0.0-next.0
+
+### Minor Changes
+
+- chakra v2 fork
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @chakra-v2/styled-system@2.13.0-next.0
+  - @chakra-v2/theme-tools@3.0.0-next.0
+  - @chakra-v2/anatomy@2.4.0-next.0
+  - @chakra-v2/utils@2.3.0-next.0
+
 ## 3.4.7
 
 ### Patch Changes

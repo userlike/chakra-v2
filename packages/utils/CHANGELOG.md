@@ -1,5 +1,11 @@
 # @chakra-ui/utils
 
+## 2.3.0-next.0
+
+### Minor Changes
+
+- chakra v2 fork
+
 ## 2.2.3
 
 ### Patch Changes

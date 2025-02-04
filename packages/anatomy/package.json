@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/anatomy",
-  "version": "2.3.5",
+  "version": "2.4.0-next.0",
   "description": "The anatomy of all chakra components",
   "keywords": [
     "theme",

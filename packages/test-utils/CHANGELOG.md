@@ -1,5 +1,18 @@
 # Change Log
 
+## 2.2.0-next.0
+
+### Minor Changes
+
+- chakra v2 fork
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @chakra-v2/react@2.11.0-next.0
+  - @chakra-v2/theme@4.0.0-next.0
+  - @chakra-v2/utils@2.3.0-next.0
+
 ## 2.1.10
 
 ### Patch Changes

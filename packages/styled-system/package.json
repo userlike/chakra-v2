@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/styled-system",
-  "version": "2.12.1",
+  "version": "2.13.0-next.0",
   "description": "Style function for css-in-js building component libraries",
   "keywords": [
     "theme",

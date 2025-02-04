@@ -1,5 +1,11 @@
 # @chakra-ui/cli
 
+## 2.6.0-next.0
+
+### Minor Changes
+
+- chakra v2 fork
+
 ## 2.5.6
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/theme-tools",
-  "version": "2.2.7",
+  "version": "3.0.0-next.0",
   "description": "Set of helpers that makes theming and styling easier",
   "keywords": [
     "theme",
@@ -35,7 +35,7 @@
     "color2k": "^2.0.2"
   },
   "peerDependencies": {
-    "@chakra-v2/styled-system": ">=2.0.0"
+    "@chakra-v2/styled-system": ">=2.13.0-next.0"
   },
   "devDependencies": {
     "@chakra-v2/styled-system": "workspace:*"

@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/icons",
-  "version": "2.2.5",
+  "version": "3.0.0-next.0",
   "description": "Chakra UI icons",
   "author": "Segun Adebayo <sage@adebayosegun.com>",
   "homepage": "https://github.com/chakra-ui/chakra-ui#readme",
@@ -24,7 +24,7 @@
     "url": "https://github.com/chakra-ui/chakra-ui/issues"
   },
   "peerDependencies": {
-    "@chakra-v2/react": ">=2.0.0",
+    "@chakra-v2/react": ">=2.11.0-next.0",
     "react": ">=18"
   },
   "devDependencies": {

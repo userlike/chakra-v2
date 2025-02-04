@@ -1,5 +1,11 @@
 # Change Log
 
+## 2.5.0-next.0
+
+### Minor Changes
+
+- chakra v2 fork
+
 ## 2.4.3
 
 ### Patch Changes

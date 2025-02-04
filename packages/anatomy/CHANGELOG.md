@@ -1,5 +1,11 @@
 # @chakra-ui/anatomy
 
+## 2.4.0-next.0
+
+### Minor Changes
+
+- chakra v2 fork
+
 ## 2.3.5
 
 ### Patch Changes

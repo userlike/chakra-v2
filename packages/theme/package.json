@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/theme",
-  "version": "3.4.7",
+  "version": "4.0.0-next.0",
   "description": "The default theme for chakra components",
   "keywords": [
     "theme",
@@ -35,7 +35,7 @@
     "@chakra-v2/utils": "workspace:*"
   },
   "peerDependencies": {
-    "@chakra-v2/styled-system": ">=2.8.0"
+    "@chakra-v2/styled-system": ">=2.13.0-next.0"
   },
   "devDependencies": {
     "@chakra-v2/cli": "workspace:*",

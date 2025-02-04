@@ -1,5 +1,16 @@
 # Change Log
 
+## 2.13.0-next.0
+
+### Minor Changes
+
+- chakra v2 fork
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @chakra-v2/utils@2.3.0-next.0
+
 ## 2.12.1
 
 ### Patch Changes

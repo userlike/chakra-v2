@@ -1,0 +1,28 @@
+{
+  "mode": "pre",
+  "tag": "next",
+  "initialVersions": {
+    "create-react-app-ts": "2.0.14",
+    "gatsby-starter-default": "1.0.14",
+    "chakra-next-app": "2.0.14",
+    "chakra-next-pages": "2.0.14",
+    "chakra-storybook-addon": "2.0.14",
+    "vite-ts": "1.0.2",
+    "@chakra-v2/anatomy": "2.3.5",
+    "@chakra-v2/cli": "2.5.6",
+    "@chakra-v2/react": "2.10.4",
+    "@chakra-v2/gatsby-plugin": "3.1.4",
+    "@chakra-v2/hooks": "2.4.3",
+    "@chakra-v2/icons": "2.2.5",
+    "@chakra-v2/next-js": "2.4.3",
+    "@chakra-v2/props-docs": "2.4.3",
+    "@chakra-v2/storybook-addon": "5.2.6",
+    "@chakra-v2/styled-system": "2.12.1",
+    "@chakra-v2/test-utils": "2.1.10",
+    "@chakra-v2/theme": "3.4.7",
+    "@chakra-v2/theme-tools": "2.2.7",
+    "@chakra-v2/utils": "2.2.3",
+    "@chakra-v2/docs": "2.1.6"
+  },
+  "changesets": ["clever-windows-breathe"]
+}
