@@ -96,10 +96,11 @@ export function styled<T extends ElementType, P extends object = {}>(
 
   const chakraComponent = forwardRef<any, any>(
     function ChakraComponent(props, ref) {
-      const { children, className, ...restProps } = props
-
       const { colorMode, forced } = useColorMode()
       const elementClassName = useElementClassName
+
+      const { children, ...restProps } = props
+      restProps.className = cx(elementClassName, restProps.className)
 
       const dataTheme = forced ? colorMode : undefined
 
@@ -108,7 +109,6 @@ export function styled<T extends ElementType, P extends object = {}>(
         {
           ref,
           "data-theme": dataTheme,
-          className: cx(elementClassName, className),
           ...restProps,
         },
         children,
