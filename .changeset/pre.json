@@ -24,5 +24,10 @@
     "@chakra-v2/utils": "2.2.3",
     "@chakra-v2/docs": "2.1.6"
   },
-  "changesets": ["clever-windows-breathe"]
+  "changesets": [
+    "clever-planes-itch",
+    "clever-windows-breathe",
+    "fifty-planets-compare",
+    "mean-beers-wash"
+  ]
 }

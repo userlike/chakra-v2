@@ -1,5 +1,23 @@
 # @chakra-ui/react
 
+## 2.11.0-next.1
+
+### Minor Changes
+
+- [`5e4e080`](https://github.com/userlike/chakra-v2/commit/5e4e080eaf50580b8b4f11813b99b6651243399d)
+  Thanks [@anilanar](https://github.com/anilanar)! - Make elementClassName,
+  which is used for scoping css reset, configurable.
+
+### Patch Changes
+
+- [`ed83276`](https://github.com/userlike/chakra-v2/commit/ed83276e8f0f9c49d7c31c6220ee0a7861cf83b4)
+  Thanks [@anilanar](https://github.com/anilanar)! - Fix how array syntax for
+  responsive styles are merged with extendTheme.
+
+- [`49c4a52`](https://github.com/userlike/chakra-v2/commit/49c4a522092d1c0601b2e95913bb4667d3e6dd83)
+  Thanks [@anilanar](https://github.com/anilanar)! - Preserve original property
+  order when injecting elementClassName as a className.
+
 ## 2.11.0-next.0
 
 ### Minor Changes
