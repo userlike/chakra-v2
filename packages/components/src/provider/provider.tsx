@@ -1,5 +1,10 @@
 import { ColorModeProvider, ColorModeProviderProps } from "../color-mode"
-import { GlobalStyle, ThemeProvider, ThemeProviderProps } from "../system"
+import {
+  ElementClassNameProvider,
+  GlobalStyle,
+  ThemeProvider,
+  ThemeProviderProps,
+} from "../system"
 import type { Dict } from "@chakra-v2/utils"
 import { CSSPolyfill, CSSReset } from "../css-reset"
 import { EnvironmentProvider, EnvironmentProviderProps } from "../env"
@@ -24,9 +29,9 @@ export interface ProviderProps extends Pick<ThemeProviderProps, "cssVarsRoot"> {
    */
   resetCSS?: boolean
   /**
-   * The selector to scope the css reset styles to.
+   * The class name to use to apply to all
    */
-  resetScope?: string
+  elementClassName?: string
   /**
    * manager to persist a users color mode preference in
    *
@@ -68,8 +73,8 @@ export const Provider: React.FC<ProviderProps> = (props) => {
     children,
     colorModeManager,
     portalZIndex,
-    resetScope,
     resetCSS = true,
+    elementClassName = "ch2",
     theme = {},
     environment,
     cssVarsRoot,
@@ -87,19 +92,25 @@ export const Provider: React.FC<ProviderProps> = (props) => {
   )
 
   return (
-    <ThemeProvider theme={theme as Dict} cssVarsRoot={cssVarsRoot}>
-      <ColorModeProvider
-        colorModeManager={colorModeManager}
-        options={theme.config}
-      >
-        {resetCSS ? <CSSReset /> : <CSSPolyfill />}
-        {!disableGlobalStyle && <GlobalStyle />}
-        {portalZIndex ? (
-          <PortalManager zIndex={portalZIndex}>{_children}</PortalManager>
-        ) : (
-          _children
-        )}
-      </ColorModeProvider>
-    </ThemeProvider>
+    <ElementClassNameProvider value={elementClassName}>
+      <ThemeProvider theme={theme as Dict} cssVarsRoot={cssVarsRoot}>
+        <ColorModeProvider
+          colorModeManager={colorModeManager}
+          options={theme.config}
+        >
+          {resetCSS ? (
+            <CSSReset elementClassName={elementClassName} />
+          ) : (
+            <CSSPolyfill />
+          )}
+          {!disableGlobalStyle && <GlobalStyle />}
+          {portalZIndex ? (
+            <PortalManager zIndex={portalZIndex}>{_children}</PortalManager>
+          ) : (
+            _children
+          )}
+        </ColorModeProvider>
+      </ThemeProvider>
+    </ElementClassNameProvider>
   )
 }

@@ -19,6 +19,7 @@ import { useColorMode } from "../color-mode"
 import { shouldForwardProp } from "./should-forward-prop"
 import { AsProps, ChakraComponent, ChakraProps, PropsOf } from "./system.types"
 import { DOMElements } from "./system.utils"
+import { useElementClassName } from "./element-class-name"
 
 const emotion_styled = interopDefault(createStyled)
 
@@ -98,6 +99,7 @@ export function styled<T extends ElementType, P extends object = {}>(
       const { children, className, ...restProps } = props
 
       const { colorMode, forced } = useColorMode()
+      const elementClassName = useElementClassName
 
       const dataTheme = forced ? colorMode : undefined
 
@@ -106,7 +108,7 @@ export function styled<T extends ElementType, P extends object = {}>(
         {
           ref,
           "data-theme": dataTheme,
-          className: cx("chakra-v2", className),
+          className: cx(elementClassName, className),
           ...restProps,
         },
         children,
