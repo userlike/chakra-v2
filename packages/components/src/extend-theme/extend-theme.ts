@@ -5,7 +5,7 @@ import {
   isChakraTheme,
   theme,
 } from "@chakra-v2/theme"
-import { isArray, isObject, mergeWith } from "@chakra-v2/utils"
+import { isArray, mergeWith } from "@chakra-v2/utils"
 
 type CloneKey<Target, Key> = Key extends keyof Target ? Target[Key] : unknown
 
@@ -141,11 +141,7 @@ function mergeThemeCustomizer(
     }
   }
 
-  if (isArray(source) && isArray(override)) {
-    return [...source, ...override]
-  }
-
-  if (isArray(source) && isObject(override)) {
+  if (isArray(source)) {
     return override
   }
 
