@@ -1,5 +1,13 @@
 # @chakra-ui/react
 
+## 2.11.0-next.2
+
+### Patch Changes
+
+- [`5b8cc08`](https://github.com/userlike/chakra-v2/commit/5b8cc0801eef1075cddfefe102953daed4b7772f)
+  Thanks [@anilanar](https://github.com/anilanar)! - fix elementClassName not
+  applying
+
 ## 2.11.0-next.1
 
 ### Minor Changes
