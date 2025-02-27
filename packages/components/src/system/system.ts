@@ -97,7 +97,7 @@ export function styled<T extends ElementType, P extends object = {}>(
   const chakraComponent = forwardRef<any, any>(
     function ChakraComponent(props, ref) {
       const { colorMode, forced } = useColorMode()
-      const elementClassName = useElementClassName
+      const elementClassName = useElementClassName()
 
       const { children, ...restProps } = props
       restProps.className = cx(elementClassName, restProps.className)
