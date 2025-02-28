@@ -39,95 +39,98 @@ export type CSSResetProps = {
 export const CSSReset = ({ elementClassName: cls }: CSSResetProps) => (
   <Global
     styles={css`
-      .${cls}, .${cls}::before, .${cls}::after {
+      :where(.${cls}, .${cls}::before, .${cls}::after) {
         border-width: 0;
         border-style: solid;
         box-sizing: border-box;
         word-wrap: break-word;
       }
 
-      .${cls}:where(hr) {
+      hr:where(.${cls}) {
         border-top-width: 1px;
         box-sizing: content-box;
         height: 0;
         overflow: visible;
       }
 
-      .${cls}:where(pre, code, kbd, samp) {
+      :where(:is(pre, code, kbd, samp).${cls}) {
         font-family: SFMono-Regular, Menlo, Monaco, Consolas, monospace;
         font-size: 1em;
       }
 
-      .${cls}:where(a) {
+      a:where(.${cls}) {
         background-color: transparent;
         color: inherit;
         text-decoration: inherit;
       }
 
-      .${cls}:where(abbr[title]) {
+      // Specifity = 2
+      abbr[title]:where(.${cls}) {
         border-bottom: none;
         text-decoration: underline;
         -webkit-text-decoration: underline dotted;
         text-decoration: underline dotted;
       }
 
-      .${cls}:where(b, strong) {
+      :where(:is(b, strong).${cls}) {
         font-weight: bold;
       }
 
-      .chakra-2:where(small) {
+      small:where(.${cls}) {
         font-size: 80%;
       }
 
-      .${cls}:where(sub, sup) {
+      :where(:is(sub, sup).${cls}) {
         font-size: 75%;
         line-height: 0;
         position: relative;
         vertical-align: baseline;
       }
 
-      .${cls}:where(sub) {
+      sub:where(.${cls}) {
         bottom: -0.25em;
       }
 
-      .${cls}:where(sup) {
+      sup:where(.${cls}) {
         top: -0.5em;
       }
 
-      .${cls}:where(img) {
+      img:where(.${cls}) {
         border-style: none;
       }
 
-      .${cls}:where(button, input, optgroup, select, textarea) {
+      :where(:is(button, input, optgroup, select, textarea).${cls}) {
         font-family: inherit;
         font-size: 100%;
         line-height: 1.15;
         margin: 0;
       }
 
-      .${cls}:where(button, input) {
+      :where(:is(button, input).${cls}) {
         overflow: visible;
       }
 
-      .${cls}:where(button, select) {
+      :where(:is(button, select).${cls}) {
         text-transform: none;
       }
 
-      .${cls}:where(
-          button::-moz-focus-inner,
-          [type="button"]::-moz-focus-inner,
-          [type="reset"]::-moz-focus-inner,
-          [type="submit"]::-moz-focus-inner
+      :where(
+          :is(
+              button,
+              [type="button"],
+              [type="reset"],
+              [type="submit"]
+            ).${cls}::-moz-focus-inner
         ) {
         border-style: none;
         padding: 0;
       }
 
-      .${cls}:where(fieldset) {
+      fieldset:where(.${cls}) {
         padding: 0.35em 0.75em 0.625em;
       }
 
-      .${cls}:where(legend) {
+      legend:where(.${cls}) {
         box-sizing: border-box;
         color: inherit;
         display: table;
@@ -136,136 +139,140 @@ export const CSSReset = ({ elementClassName: cls }: CSSResetProps) => (
         white-space: normal;
       }
 
-      .${cls}:where(progress) {
+      progress:where(.${cls}) {
         vertical-align: baseline;
       }
 
-      .${cls}:where(textarea) {
+      textarea:where(.${cls}) {
         overflow: auto;
       }
 
-      .${cls}:where([type="checkbox"], [type="radio"]) {
+      :where(:is([type="checkbox"], [type="radio"]).${cls}) {
         box-sizing: border-box;
         padding: 0;
       }
 
-      .${cls}:where(input[type="number"])::-webkit-inner-spin-button,
-      .${cls}:where(input[type="number"])::-webkit-outer-spin-button {
+      input[type="number"]:where(.${cls})::-webkit-inner-spin-button,
+      input[type="number"]:where(.${cls})::-webkit-outer-spin-button {
         -webkit-appearance: none !important;
       }
 
-      .${cls}:where(input[type="number"]) {
+      input[type="number"]:where(.${cls}) {
         -moz-appearance: textfield;
       }
 
-      .${cls}:where(input[type="search"]) {
+      input[type="search"]:where(.${cls}) {
         -webkit-appearance: textfield;
         outline-offset: -2px;
       }
 
-      .${cls}:where(input[type="search"])::-webkit-search-decoration {
+      input[type="search"]:where(.${cls})::-webkit-search-decoration {
         -webkit-appearance: none !important;
       }
 
-      .${cls}::-webkit-file-upload-button {
+      :where(.${cls})::-webkit-file-upload-button {
         -webkit-appearance: button;
         font: inherit;
       }
 
-      .${cls}:where(details) {
+      details:where(.${cls}) {
         display: block;
       }
 
-      .${cls}:where(summary) {
+      summary:where(.${cls}) {
         display: list-item;
       }
 
-      .${cls}:where(template) {
+      template:where(.${cls}) {
         display: none;
       }
 
-      .${cls}:where([hidden]) {
+      [hidden]:where(.${cls}) {
         display: none !important;
       }
 
-      .${cls}:where(
-          blockquote,
-          dl,
-          dd,
-          h1,
-          h2,
-          h3,
-          h4,
-          h5,
-          h6,
-          hr,
-          figure,
-          p,
-          pre
+      :where(
+          :is(
+              blockquote,
+              dl,
+              dd,
+              h1,
+              h2,
+              h3,
+              h4,
+              h5,
+              h6,
+              hr,
+              figure,
+              p,
+              pre
+            ).${cls}
         ) {
         margin: 0;
       }
 
-      .${cls}:where(button) {
+      button:where(.${cls}) {
         background: transparent;
         padding: 0;
       }
 
-      .${cls}:where(fieldset) {
+      fieldset:where(.${cls}) {
         margin: 0;
         padding: 0;
       }
 
-      .${cls}:where(ol, ul) {
+      :where(:is(ol, ul).${cls}) {
         margin: 0;
         padding: 0;
       }
 
-      .${cls}:where(textarea) {
+      textarea:where(.${cls}) {
         resize: vertical;
       }
 
-      .${cls}:where(button, [role="button"]) {
+      :where(:is(button, [role="button"]).${cls}) {
         cursor: pointer;
       }
 
-      .${cls}:where(button)::-moz-focus-inner {
+      button:where(.${cls})::-moz-focus-inner {
         border: 0 !important;
       }
 
-      .${cls}:where(table) {
+      table:where(.${cls}) {
         border-collapse: collapse;
       }
 
-      .${cls}:where(h1, h2, h3, h4, h5, h6) {
+      :where(:is(h1, h2, h3, h4, h5, h6).${cls}) {
         font-size: inherit;
         font-weight: inherit;
       }
 
-      .${cls}:where(button, input, optgroup, select, textarea) {
+      :where(:is(button, input, optgroup, select, textarea).${cls}) {
         padding: 0;
         line-height: inherit;
         color: inherit;
       }
 
-      .${cls}:where(img, svg, video, canvas, audio, iframe, embed, object) {
+      :where(
+          :is(img, svg, video, canvas, audio, iframe, embed, object).${cls}
+        ) {
         display: block;
       }
 
-      .${cls}:where(img, video) {
+      :where(:is(img, video).${cls}) {
         max-width: 100%;
         height: auto;
       }
 
-      .${cls}[data-js-focus-visible]
-        :focus:not([data-focus-visible-added]):not(
+      [data-js-focus-visible]
+        :where(.${cls}):focus:not([data-focus-visible-added]):not(
           [data-focus-visible-disabled]
         ) {
         outline: none;
         box-shadow: none;
       }
 
-      .${cls}:where(select)::-ms-expand {
+      select:where(.${cls})::-ms-expand {
         display: none;
       }
 
