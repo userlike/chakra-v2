@@ -1,5 +1,13 @@
 # @chakra-ui/react
 
+## 2.11.0-next.3
+
+### Patch Changes
+
+- [`88b6896`](https://github.com/userlike/chakra-v2/commit/88b68962dba3cc5814c795d3788f55e8c95f66aa)
+  Thanks [@anilanar](https://github.com/anilanar)! - republish to fix dist
+  assets
+
 ## 2.11.0-next.2
 
 ### Patch Changes
