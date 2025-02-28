@@ -1,5 +1,13 @@
 # @chakra-ui/react
 
+## 2.11.0-next.4
+
+### Patch Changes
+
+- [`76160d8`](https://github.com/userlike/chakra-v2/commit/76160d8e085f7f42df36aeeff77658c114f97060)
+  Thanks [@anilanar](https://github.com/anilanar)! - Fix css reset not applying
+  elementClassName correctly.
+
 ## 2.11.0-next.3
 
 ### Patch Changes
