@@ -45,7 +45,7 @@
     "@babel/preset-env": "^7.22.10",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
-    "@babel/runtime": "^7.22.10",
+    "@babel/runtime": "^7.26.10",
     "@chakra-v2/cli": "workspace:*",
     "@chakra-v2/storybook-addon": "workspace:*",
     "@chakra-v2/test-utils": "workspace:*",
