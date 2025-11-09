@@ -23,15 +23,17 @@ export function toCSSVar<T extends Record<string, any>>(rawTheme: T) {
     cssVars,
   } = createThemeVars(theme)
 
+  const cssVarPrefix = rawTheme.config.cssVarPrefix
+
   const defaultCssVars: Record<string, any> = {
-    "--chakra-ring-inset": "var(--chakra-empty,/*!*/ /*!*/)",
-    "--chakra-ring-offset-width": "0px",
-    "--chakra-ring-offset-color": "#fff",
-    "--chakra-ring-color": "rgba(66, 153, 225, 0.6)",
-    "--chakra-ring-offset-shadow": "0 0 #0000",
-    "--chakra-ring-shadow": "0 0 #0000",
-    "--chakra-space-x-reverse": "0",
-    "--chakra-space-y-reverse": "0",
+    [`--${cssVarPrefix}-ring-inset`]: `var(--${cssVarPrefix}-empty,/*!*/ /*!*/)`,
+    [`--${cssVarPrefix}-ring-offset-width`]: "0px",
+    [`--${cssVarPrefix}-ring-offset-color`]: "#fff",
+    [`--${cssVarPrefix}-ring-color`]: "rgba(66, 153, 225, 0.6)",
+    [`--${cssVarPrefix}-ring-offset-shadow`]: "0 0 #0000",
+    [`--${cssVarPrefix}-ring-shadow`]: "0 0 #0000",
+    [`--${cssVarPrefix}-space-x-reverse`]: "0",
+    [`--${cssVarPrefix}-space-y-reverse`]: "0",
   }
 
   Object.assign(theme, {

@@ -28,15 +28,15 @@ export const typography: Config = {
     },
   },
   noOfLines: {
-    static: {
+    static: (theme) => ({
       overflow: "hidden",
       textOverflow: "ellipsis",
       display: "-webkit-box",
       WebkitBoxOrient: "vertical",
       //@ts-ignore
-      WebkitLineClamp: "var(--chakra-line-clamp)",
-    },
-    property: "--chakra-line-clamp",
+      WebkitLineClamp: `var(--${theme.config.cssVarPrefix}-line-clamp)`,
+    }),
+    property: (theme) => `--${theme.config.cssVarPrefix}-line-clamp`,
   },
 }
 

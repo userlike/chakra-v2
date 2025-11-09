@@ -15,7 +15,7 @@ export interface PropConfig {
    *
    * It does not get replicated if value is responsive or styles are nested.
    */
-  static?: Record<string, any>
+  static?: MaybeThemeFunction<Record<string, any>>
   /**
    * The theme scale this maps to
    */
@@ -38,7 +38,7 @@ export interface PropConfig {
 export type Config = Record<string, PropConfig | true>
 
 export function toConfig(scale: ThemeScale, transform?: Transform) {
-  return <T extends CSSProp>(property: T | T[]) => {
+  return <T extends CSSProp>(property: MaybeThemeFunction<T | T[]>) => {
     const result: PropConfig = { property, scale }
     result.transform = createTransform({
       scale,

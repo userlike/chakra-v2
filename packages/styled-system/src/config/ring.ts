@@ -7,10 +7,14 @@ import { Config } from "../utils/prop-config"
  */
 export const ring: Config = {
   ring: { transform: transforms.ring },
-  ringColor: t.colors("--chakra-ring-color"),
-  ringOffset: t.prop("--chakra-ring-offset-width"),
-  ringOffsetColor: t.colors("--chakra-ring-offset-color"),
-  ringInset: t.prop("--chakra-ring-inset"),
+  ringColor: t.colors((theme) => `--${theme.config.cssVarPrefix}-ring-color`),
+  ringOffset: t.prop(
+    (theme) => `--${theme.config.cssVarPrefix}-ring-offset-width`,
+  ),
+  ringOffsetColor: t.colors(
+    (theme) => `--${theme.config.cssVarPrefix}-ring-offset-color`,
+  ),
+  ringInset: t.prop((theme) => `--${theme.config.cssVarPrefix}-ring-inset`),
 }
 
 export interface RingProps {

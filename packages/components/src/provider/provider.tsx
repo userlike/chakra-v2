@@ -99,9 +99,12 @@ export const Provider: React.FC<ProviderProps> = (props) => {
           options={theme.config}
         >
           {resetCSS ? (
-            <CSSReset elementClassName={elementClassName} />
+            <CSSReset
+              elementClassName={elementClassName}
+              cssVarPrefix={theme.config.cssVarPrefix}
+            />
           ) : (
-            <CSSPolyfill />
+            <CSSPolyfill cssVarPrefix={theme.config.cssVarPrefix} />
           )}
           {!disableGlobalStyle && <GlobalStyle />}
           {portalZIndex ? (

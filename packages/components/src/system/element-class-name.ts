@@ -12,6 +12,6 @@ import { createContext } from "@chakra-v2/utils"
 export const [ElementClassNameProvider, useElementClassName] =
   createContext<string>({
     name: "ElementClassNameContext",
-    errorMessage:
-      "useElementClassName: `elementClassName` is undefined. Seems you forgot to wrap the components in `<ElementClassNameProvider />` ",
+    strict: false,
+    defaultValue: "",
   })

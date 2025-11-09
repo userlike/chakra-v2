@@ -6,14 +6,17 @@ export const transform: Config = {
   clipPath: true,
   transform: t.propT("transform", transforms.transform),
   transformOrigin: true,
-  translateX: t.spaceT("--chakra-translate-x"),
-  translateY: t.spaceT("--chakra-translate-y"),
-  skewX: t.degreeT("--chakra-skew-x"),
-  skewY: t.degreeT("--chakra-skew-y"),
-  scaleX: t.prop("--chakra-scale-x"),
-  scaleY: t.prop("--chakra-scale-y"),
-  scale: t.prop(["--chakra-scale-x", "--chakra-scale-y"]),
-  rotate: t.degreeT("--chakra-rotate"),
+  translateX: t.spaceT((theme) => `--${theme.config.cssVarPrefix}-translate-x`),
+  translateY: t.spaceT((theme) => `--${theme.config.cssVarPrefix}-translate-y`),
+  skewX: t.degreeT((theme) => `--${theme.config.cssVarPrefix}-skew-x`),
+  skewY: t.degreeT((theme) => `--${theme.config.cssVarPrefix}-skew-y`),
+  scaleX: t.prop((theme) => `--${theme.config.cssVarPrefix}-scale-x`),
+  scaleY: t.prop((theme) => `--${theme.config.cssVarPrefix}-scale-y`),
+  scale: t.prop((theme) => [
+    `--${theme.config.cssVarPrefix}-scale-x`,
+    `--${theme.config.cssVarPrefix}-scale-y`,
+  ]),
+  rotate: t.degreeT((theme) => `--${theme.config.cssVarPrefix}-rotate`),
 }
 
 export interface TransformProps {

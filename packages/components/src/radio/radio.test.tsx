@@ -1,4 +1,4 @@
-import { fireEvent, render, screen } from "@chakra-v2/test-utils"
+import { fireEvent, render } from "@chakra-v2/test-utils"
 import { Radio, UseRadioProps, useRadio } from "."
 import { FormControl, FormHelperText, FormLabel } from "../form-control"
 

@@ -4,26 +4,55 @@ import { Length, Token, t, transforms } from "../utils"
 
 export const filter: Config = {
   filter: { transform: transforms.filter },
-  blur: t.blur("--chakra-blur"),
-  brightness: t.propT("--chakra-brightness", transforms.brightness),
-  contrast: t.propT("--chakra-contrast", transforms.contrast),
-  hueRotate: t.propT("--chakra-hue-rotate", transforms.hueRotate),
-  invert: t.propT("--chakra-invert", transforms.invert),
-  saturate: t.propT("--chakra-saturate", transforms.saturate),
-  dropShadow: t.propT("--chakra-drop-shadow", transforms.dropShadow),
-  backdropFilter: { transform: transforms.backdropFilter },
-  backdropBlur: t.blur("--chakra-backdrop-blur"),
-  backdropBrightness: t.propT(
-    "--chakra-backdrop-brightness",
+  blur: t.blur((theme) => `--${theme.config.cssVarPrefix}-blur`),
+  brightness: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-brightness`,
     transforms.brightness,
   ),
-  backdropContrast: t.propT("--chakra-backdrop-contrast", transforms.contrast),
-  backdropHueRotate: t.propT(
-    "--chakra-backdrop-hue-rotate",
+  contrast: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-contrast`,
+    transforms.contrast,
+  ),
+  hueRotate: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-hue-rotate`,
     transforms.hueRotate,
   ),
-  backdropInvert: t.propT("--chakra-backdrop-invert", transforms.invert),
-  backdropSaturate: t.propT("--chakra-backdrop-saturate", transforms.saturate),
+  invert: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-invert`,
+    transforms.invert,
+  ),
+  saturate: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-saturate`,
+    transforms.saturate,
+  ),
+  dropShadow: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-drop-shadow`,
+    transforms.dropShadow,
+  ),
+  backdropFilter: { transform: transforms.backdropFilter },
+  backdropBlur: t.blur(
+    (theme) => `--${theme.config.cssVarPrefix}-backdrop-blur`,
+  ),
+  backdropBrightness: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-backdrop-brightness`,
+    transforms.brightness,
+  ),
+  backdropContrast: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-backdrop-contrast`,
+    transforms.contrast,
+  ),
+  backdropHueRotate: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-backdrop-hue-rotate`,
+    transforms.hueRotate,
+  ),
+  backdropInvert: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-backdrop-invert`,
+    transforms.invert,
+  ),
+  backdropSaturate: t.propT(
+    (theme) => `--${theme.config.cssVarPrefix}-backdrop-saturate`,
+    transforms.saturate,
+  ),
 }
 
 export interface FilterProps {

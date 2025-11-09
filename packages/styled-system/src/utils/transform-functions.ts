@@ -1,10 +1,10 @@
 import {
-  backdropFilterTemplate,
-  filterTemplate,
+  getBackdropFilterTemplate,
+  getFilterTemplate,
   getRingTemplate,
   getTransformGpuTemplate,
   getTransformTemplate,
-  flexDirectionTemplate,
+  getFlexDirectionTemplate,
 } from "./templates"
 import { gradientTransform, globalSet, isCSSFunction } from "./parse-gradient"
 
@@ -21,27 +21,27 @@ const analyzeCSSValue = (value: number | string) => {
 const wrap = (str: string) => (value: any) => `${str}(${value})`
 
 export const transformFunctions = {
-  filter(value: any) {
-    return value !== "auto" ? value : filterTemplate
+  filter(value: any, theme: Record<string, any>) {
+    return value !== "auto" ? value : getFilterTemplate(theme)
   },
-  backdropFilter(value: any) {
-    return value !== "auto" ? value : backdropFilterTemplate
+  backdropFilter(value: any, theme: Record<string, any>) {
+    return value !== "auto" ? value : getBackdropFilterTemplate(theme)
   },
-  ring(value: string) {
-    return getRingTemplate(transformFunctions.px(value))
+  ring(value: string, theme: Record<string, any>) {
+    return getRingTemplate(transformFunctions.px(value), theme)
   },
   bgClip(value: string) {
     return value === "text"
       ? { color: "transparent", backgroundClip: "text" }
       : { backgroundClip: value }
   },
-  transform(value: any) {
-    if (value === "auto") return getTransformTemplate()
-    if (value === "auto-gpu") return getTransformGpuTemplate()
+  transform(value: any, theme: Record<string, any>) {
+    if (value === "auto") return getTransformTemplate(theme)
+    if (value === "auto-gpu") return getTransformGpuTemplate(theme)
     return value
   },
-  vh(value: number | string) {
-    return value === "$100vh" ? "var(--chakra-v2-vh)" : value
+  vh(value: number | string, theme: Record<string, any>) {
+    return value === "$100vh" ? `var(--${theme.config.cssVarPrefix}-vh)` : value
   },
   px(value: number | string) {
     if (value == null) return value
@@ -83,8 +83,9 @@ export const transformFunctions = {
       ? { outline: "2px solid transparent", outlineOffset: "2px" }
       : { outline: value }
   },
-  flexDirection(value: any) {
-    const { space, divide } = (flexDirectionTemplate as any)[value] ?? {}
+  flexDirection(value: any, theme: Record<string, any>) {
+    const { space, divide } =
+      (getFlexDirectionTemplate(theme) as any)[value] ?? {}
     const result: Record<string, any> = { flexDirection: value }
     if (space) result[space] = 1
     if (divide) result[divide] = 1

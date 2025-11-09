@@ -2,41 +2,51 @@ import { Global } from "@emotion/react"
 
 const css = String.raw
 
-const vhPolyfill = css`
+const vhPolyfill = (prefix: string) => css`
   :root,
   :host {
-    --chakra-v2-vh: 100vh;
+    --${prefix}-vh: 100vh;
   }
 
   @supports (height: -webkit-fill-available) {
     :root,
     :host {
-      --chakra-v2-vh: -webkit-fill-available;
+      --${prefix}-vh: -webkit-fill-available;
     }
   }
 
   @supports (height: -moz-fill-available) {
     :root,
     :host {
-      --chakra-v2-vh: -moz-fill-available;
+      --${prefix}-vh: -moz-fill-available;
     }
   }
 
   @supports (height: 100dvh) {
     :root,
     :host {
-      --chakra-v2-vh: 100dvh;
+      --${prefix}-vh: 100dvh;
     }
   }
 `
 
-export const CSSPolyfill = () => <Global styles={vhPolyfill} />
+export type CSSPolyfillProps = {
+  cssVarPrefix: string
+}
+
+export const CSSPolyfill = ({ cssVarPrefix }: CSSPolyfillProps) => (
+  <Global styles={vhPolyfill(cssVarPrefix)} />
+)
 
 export type CSSResetProps = {
+  cssVarPrefix: string
   elementClassName: string
 }
 
-export const CSSReset = ({ elementClassName: cls }: CSSResetProps) => (
+export const CSSReset = ({
+  cssVarPrefix,
+  elementClassName: cls,
+}: CSSResetProps) => (
   <Global
     styles={css`
       :where(.${cls}, .${cls}::before, .${cls}::after) {
@@ -276,7 +286,7 @@ export const CSSReset = ({ elementClassName: cls }: CSSResetProps) => (
         display: none;
       }
 
-      ${vhPolyfill}
+      ${vhPolyfill(cssVarPrefix)}
     `}
   />
 )
