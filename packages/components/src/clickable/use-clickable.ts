@@ -2,6 +2,7 @@ import { mergeRefs } from "@chakra-v2/hooks"
 import { dataAttr } from "@chakra-v2/utils"
 import { useCallback, useState } from "react"
 import { useEventListeners } from "./use-event-listeners"
+import { useEnvironment } from "../env"
 
 export interface UseClickableProps extends React.HTMLAttributes<HTMLElement> {
   /**
@@ -78,6 +79,8 @@ export function useClickable(props: UseClickableProps = {}) {
    */
   const [isPressed, setIsPressed] = useState(false)
 
+  const { getDocument } = useEnvironment()
+
   const listeners = useEventListeners()
 
   /**
@@ -108,20 +111,6 @@ export function useClickable(props: UseClickableProps = {}) {
     [isDisabled, onClick],
   )
 
-  const onDocumentKeyUp = useCallback(
-    (e: KeyboardEvent) => {
-      if (isPressed && isValidElement(e)) {
-        e.preventDefault()
-        e.stopPropagation()
-
-        setIsPressed(false)
-        // eslint-disable-next-line @typescript-eslint/no-unused-vars
-        listeners.remove(document, "keyup", onDocumentKeyUp, false)
-      }
-    },
-    [isPressed, listeners],
-  )
-
   const handleKeyDown = useCallback(
     (event: React.KeyboardEvent<HTMLElement>) => {
       onKeyDown?.(event)
@@ -146,16 +135,30 @@ export function useClickable(props: UseClickableProps = {}) {
         self.click()
       }
 
-      listeners.add(document, "keyup", onDocumentKeyUp, false)
+      const doc = getDocument()
+
+      const onDocumentKeyUp = (e: KeyboardEvent) => {
+        if (isPressed && isValidElement(e)) {
+          e.preventDefault()
+          e.stopPropagation()
+
+          setIsPressed(false)
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
+          listeners.remove(doc, "keyup", onDocumentKeyUp, false)
+        }
+      }
+
+      listeners.add(doc, "keyup", onDocumentKeyUp, false)
     },
     [
+      onKeyDown,
       isDisabled,
       isButton,
-      onKeyDown,
       clickOnEnter,
       clickOnSpace,
+      getDocument,
       listeners,
-      onDocumentKeyUp,
+      isPressed,
     ],
   )
 

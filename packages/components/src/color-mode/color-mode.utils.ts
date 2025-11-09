@@ -8,21 +8,26 @@ const classNames = {
 type UtilOptions = {
   preventTransition?: boolean
   nonce?: string
+  getDocument: () => Document
 }
 
-export function getColorModeUtils(options: UtilOptions = {}) {
+export function getColorModeUtils(
+  options: UtilOptions = { getDocument: () => document },
+) {
   const { preventTransition = true, nonce } = options
 
   const utils = {
     setDataset: (value: ColorMode) => {
+      const doc = options.getDocument()
       const cleanup = preventTransition ? utils.preventTransition() : undefined
-      document.documentElement.dataset.theme = value
-      document.documentElement.style.colorScheme = value
+      doc.documentElement.dataset.theme = value
+      doc.documentElement.style.colorScheme = value
       cleanup?.()
     },
     setClassName(dark: boolean) {
-      document.body.classList.add(dark ? classNames.dark : classNames.light)
-      document.body.classList.remove(dark ? classNames.light : classNames.dark)
+      const doc = options.getDocument()
+      doc.body.classList.add(dark ? classNames.dark : classNames.light)
+      doc.body.classList.remove(dark ? classNames.light : classNames.dark)
     },
     query() {
       return window.matchMedia("(prefers-color-scheme: dark)")
@@ -47,9 +52,10 @@ export function getColorModeUtils(options: UtilOptions = {}) {
       }
     },
     preventTransition() {
-      const css = document.createElement("style")
+      const doc = options.getDocument()
+      const css = doc.createElement("style")
       css.appendChild(
-        document.createTextNode(
+        doc.createTextNode(
           `*{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}`,
         ),
       )
@@ -58,16 +64,16 @@ export function getColorModeUtils(options: UtilOptions = {}) {
         css.nonce = nonce
       }
 
-      document.head.appendChild(css)
+      doc.head.appendChild(css)
 
       return () => {
         // force a reflow
-        ;(() => window.getComputedStyle(document.body))()
+        ;(() => window.getComputedStyle(doc.body))()
 
         // wait for next tick
         requestAnimationFrame(() => {
           requestAnimationFrame(() => {
-            document.head.removeChild(css)
+            doc.head.removeChild(css)
           })
         })
       }

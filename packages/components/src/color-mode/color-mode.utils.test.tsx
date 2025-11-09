@@ -15,6 +15,7 @@ describe("getColorModeUtils", () => {
       const { result } = renderHook(() =>
         getColorModeUtils({
           nonce: mockNonce,
+          getDocument: () => document,
         }),
       )
 

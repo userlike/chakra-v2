@@ -84,7 +84,6 @@ function getOptions(options?: LiveRegionOptions) {
     "aria-relevant": "all",
     role: "status",
     id: "chakra-a11y-live-region",
-    parentNode: isBrowser ? document.body : undefined,
   }
   if (options) {
     return Object.assign(defaultOptions, options)

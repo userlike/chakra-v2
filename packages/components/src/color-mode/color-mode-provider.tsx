@@ -15,6 +15,7 @@ import {
 } from "./color-mode-types"
 import { getColorModeUtils } from "./color-mode.utils"
 import { StorageManager, localStorageManager } from "./storage-manager"
+import { useEnvironment } from "../env"
 
 const noop = () => {}
 
@@ -42,6 +43,7 @@ export const ColorModeProvider: React.FC<ColorModeProviderProps> =
     props: ColorModeProviderProps,
     cache: EmotionCache,
   ) {
+    const { getDocument } = useEnvironment()
     const {
       value,
       children,
@@ -68,8 +70,9 @@ export const ColorModeProvider: React.FC<ColorModeProviderProps> =
         getColorModeUtils({
           preventTransition: disableTransitionOnChange,
           nonce: cache?.nonce,
+          getDocument,
         }),
-      [disableTransitionOnChange, cache?.nonce],
+      [disableTransitionOnChange, cache?.nonce, getDocument],
     )
 
     const resolvedValue =
