@@ -1,5 +1,13 @@
 # Change Log
 
+## 3.0.0-next.1
+
+### Patch Changes
+
+- [`2d04716`](https://github.com/userlike/chakra-v2/commit/2d04716ab4fc603456e43facff3375d90768fc83)
+  Thanks [@anilanar](https://github.com/anilanar)! - make sure all css vars
+  respect cssVarsPrefix
+
 ## 3.0.0-next.0
 
 ### Minor Changes

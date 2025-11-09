@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/theme-tools",
-  "version": "3.0.0-next.0",
+  "version": "3.0.0-next.1",
   "description": "Set of helpers that makes theming and styling easier",
   "keywords": [
     "theme",

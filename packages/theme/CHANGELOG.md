@@ -1,5 +1,19 @@
 # Change Log
 
+## 4.0.0-next.1
+
+### Patch Changes
+
+- [`2d04716`](https://github.com/userlike/chakra-v2/commit/2d04716ab4fc603456e43facff3375d90768fc83)
+  Thanks [@anilanar](https://github.com/anilanar)! - make sure all css vars
+  respect cssVarsPrefix
+
+- Updated dependencies
+  [[`2d04716`](https://github.com/userlike/chakra-v2/commit/2d04716ab4fc603456e43facff3375d90768fc83)]:
+  - @chakra-v2/theme-tools@3.0.0-next.1
+  - @chakra-v2/anatomy@2.4.0-next.1
+  - @chakra-v2/utils@2.3.0-next.1
+
 ## 4.0.0-next.0
 
 ### Minor Changes
