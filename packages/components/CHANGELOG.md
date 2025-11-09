@@ -1,5 +1,13 @@
 # @chakra-ui/react
 
+## 2.11.0-next.8
+
+### Patch Changes
+
+- [`30b98ed`](https://github.com/userlike/chakra-v2/commit/30b98ed5fc8caf8af8eb96f29fed199652a5318c)
+  Thanks [@anilanar](https://github.com/anilanar)! - move EnvironmentProvider
+  above to fix color mode
+
 ## 2.11.0-next.7
 
 ### Patch Changes
