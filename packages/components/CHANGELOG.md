@@ -1,5 +1,13 @@
 # @chakra-ui/react
 
+## 2.11.0-next.7
+
+### Patch Changes
+
+- [`9940a5b`](https://github.com/userlike/chakra-v2/commit/9940a5b0f5475bd27ea26006064f15869a04e790)
+  Thanks [@anilanar](https://github.com/anilanar)! - make useClickable and color
+  mode aware of custom environment
+
 ## 2.11.0-next.6
 
 ### Patch Changes
