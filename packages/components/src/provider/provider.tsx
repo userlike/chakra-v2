@@ -82,38 +82,34 @@ export const Provider: React.FC<ProviderProps> = (props) => {
     disableGlobalStyle,
   } = props
 
-  const _children = (
-    <EnvironmentProvider
-      environment={environment}
-      disabled={disableEnvironment}
-    >
-      {children}
-    </EnvironmentProvider>
-  )
-
   return (
     <ElementClassNameProvider value={elementClassName}>
-      <ThemeProvider theme={theme as Dict} cssVarsRoot={cssVarsRoot}>
-        <ColorModeProvider
-          colorModeManager={colorModeManager}
-          options={theme.config}
-        >
-          {resetCSS ? (
-            <CSSReset
-              elementClassName={elementClassName}
-              cssVarPrefix={theme.config.cssVarPrefix}
-            />
-          ) : (
-            <CSSPolyfill cssVarPrefix={theme.config.cssVarPrefix} />
-          )}
-          {!disableGlobalStyle && <GlobalStyle />}
-          {portalZIndex ? (
-            <PortalManager zIndex={portalZIndex}>{_children}</PortalManager>
-          ) : (
-            _children
-          )}
-        </ColorModeProvider>
-      </ThemeProvider>
+      <EnvironmentProvider
+        environment={environment}
+        disabled={disableEnvironment}
+      >
+        <ThemeProvider theme={theme as Dict} cssVarsRoot={cssVarsRoot}>
+          <ColorModeProvider
+            colorModeManager={colorModeManager}
+            options={theme.config}
+          >
+            {resetCSS ? (
+              <CSSReset
+                elementClassName={elementClassName}
+                cssVarPrefix={theme.config.cssVarPrefix}
+              />
+            ) : (
+              <CSSPolyfill cssVarPrefix={theme.config.cssVarPrefix} />
+            )}
+            {!disableGlobalStyle && <GlobalStyle />}
+            {portalZIndex ? (
+              <PortalManager zIndex={portalZIndex}>{children}</PortalManager>
+            ) : (
+              children
+            )}
+          </ColorModeProvider>
+        </ThemeProvider>
+      </EnvironmentProvider>
     </ElementClassNameProvider>
   )
 }
