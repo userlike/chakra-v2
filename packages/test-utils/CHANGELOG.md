@@ -1,5 +1,13 @@
 # Change Log
 
+## 2.2.0-next.9
+
+### Patch Changes
+
+- Updated dependencies
+  [[`e5ac33c`](https://github.com/userlike/chakra-v2/commit/e5ac33c536fce81a41f9661e94025e1a06d5220f)]:
+  - @chakra-v2/react@2.11.0-next.9
+
 ## 2.2.0-next.8
 
 ### Patch Changes

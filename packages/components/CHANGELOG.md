@@ -1,5 +1,12 @@
 # @chakra-ui/react
 
+## 2.11.0-next.9
+
+### Patch Changes
+
+- [`e5ac33c`](https://github.com/userlike/chakra-v2/commit/e5ac33c536fce81a41f9661e94025e1a06d5220f)
+  Thanks [@anilanar](https://github.com/anilanar)! - allow custom toastStore
+
 ## 2.11.0-next.8
 
 ### Patch Changes
