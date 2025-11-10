@@ -3,7 +3,10 @@ import { AnimatePresence, AnimatePresenceProps, Variants } from "framer-motion"
 import { useSyncExternalStore } from "react"
 import { Portal, PortalProps } from "../portal"
 import { ToastComponent, ToastComponentProps } from "./toast.component"
-import { toastStore } from "./toast.store"
+import {
+  toastStore as toastStoreSingleton,
+  type ToastStore,
+} from "./toast.store"
 import type {
   CloseAllToastsOptions,
   ToastId,
@@ -89,6 +92,10 @@ export type ToastProviderProps = React.PropsWithChildren<{
    */
   portalProps?: Pick<PortalProps, "appendToParentPortal" | "containerRef">
   /**
+   * Optional toast store. Will use a singleton store if not provided
+   */
+  toastStore?: ToastStore
+  /**
    * Props to be forwarded to the `AnimatePresence` component
    */
   animatePresenceProps?: AnimatePresenceProps
@@ -109,18 +116,19 @@ export const [ToastOptionProvider, useToastOptionContext] = createContext<
  * across all corners ("top", "bottom", etc.)
  */
 export const ToastProvider = (props: ToastProviderProps) => {
-  const state = useSyncExternalStore(
-    toastStore.subscribe,
-    toastStore.getState,
-    toastStore.getState,
-  )
-
   const {
     motionVariants,
     component: Component = ToastComponent,
     portalProps,
     animatePresenceProps,
+    toastStore = toastStoreSingleton,
   } = props
+
+  const state = useSyncExternalStore(
+    toastStore.subscribe,
+    toastStore.getState,
+    toastStore.getState,
+  )
 
   const stateKeys = Object.keys(state) as Array<keyof typeof state>
   const toastList = stateKeys.map((position) => {

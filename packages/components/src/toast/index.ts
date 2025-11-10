@@ -6,6 +6,8 @@ export type {
 export { createToastFn } from "./create-toast-fn"
 export type { CreateToastFnReturn } from "./create-toast-fn"
 export { Toast, createRenderToast } from "./toast"
+export { createToastStore } from "./toast.store"
+export type { ToastStore } from "./toast.store"
 export type { ToastProps } from "./toast"
 export { getToastPlacement } from "./toast.placement"
 export type {

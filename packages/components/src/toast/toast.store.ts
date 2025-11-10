@@ -4,13 +4,13 @@ import { CreateToastOptions, ToastMethods } from "./toast.provider"
 import type { ToastId, ToastMessage, ToastState } from "./toast.types"
 import { findToast, getToastPosition } from "./toast.utils"
 
-type ToastStore = ToastMethods & {
+export type ToastStore = ToastMethods & {
   getState: () => ToastState
   subscribe: (onStoreChange: () => void) => () => void
   removeToast: (id: ToastId, position: ToastPosition) => void
 }
 
-const initialState = {
+const defaultState = {
   top: [],
   "top-left": [],
   "top-right": [],
@@ -22,9 +22,11 @@ const initialState = {
 /**
  * Store to track all the toast across all positions
  */
-export const toastStore = createStore(initialState)
+export const toastStore = createToastStore(defaultState)
 
-function createStore(initialState: ToastState): ToastStore {
+export function createToastStore(
+  initialState: ToastState = defaultState,
+): ToastStore {
   let state = initialState
   const listeners = new Set<() => void>()
 
