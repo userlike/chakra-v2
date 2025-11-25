@@ -1,8 +1,7 @@
 import { useLatestRef } from "@chakra-v2/hooks"
-import { theme as base } from "@chakra-v2/theme"
 import * as React from "react"
-import { ToastId, createStandaloneToast, useToast } from "."
-import { Alert, Button, ButtonGroup, Text, chakra, useColorMode } from ".."
+import { ToastId, useToast } from "."
+import { Alert, Button, ButtonGroup, chakra, useColorMode } from ".."
 
 export default {
   title: "Components / Feedback / Toast",
@@ -302,46 +301,6 @@ export const useToastCustomRenderUpdate = () => {
     >
       toast
     </Button>
-  )
-}
-
-export function StandAloneToast() {
-  const { ToastContainer, toast } = createStandaloneToast({
-    theme: {
-      ...base,
-      colors: {
-        green: {
-          500: "#bf3c3c",
-        },
-      },
-    },
-  })
-  return (
-    <>
-      <ToastContainer />
-
-      <Text fontSize="lg" fontWeight="bold">
-        This Text matches Theme font
-      </Text>
-      <ButtonGroup>
-        <Button
-          onClick={() => {
-            toast({
-              title: "Standalone Toast",
-              description: "Uses provided theme",
-              status: "success",
-              duration: 3000,
-              isClosable: true,
-              onCloseComplete: () => {
-                console.log("hello")
-              },
-            })
-          }}
-        >
-          Standalone Toast With Custom Theme
-        </Button>
-      </ButtonGroup>
-    </>
   )
 }
 

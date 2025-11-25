@@ -4,7 +4,7 @@ import type { AlertStatus } from "../alert"
 import { useChakra } from "../system"
 import { CreateToastFnReturn, createToastFn } from "./create-toast-fn"
 import { ToastPosition } from "./toast.placement"
-import { useToastOptionContext } from "./toast.provider"
+import { useToastOptionContext, useToastStoreContext } from "./toast.provider"
 import type { RenderProps, ToastId, ToastOptions } from "./toast.types"
 
 export interface UseToastOptions extends ThemingProps<"Alert"> {
@@ -70,14 +70,15 @@ export interface UseToastOptions extends ThemingProps<"Alert"> {
  */
 export function useToast(options?: UseToastOptions): CreateToastFnReturn {
   const { theme } = useChakra()
+  const toastStore = useToastStoreContext()
   const defaultOptions = useToastOptionContext()
 
   return useMemo(
     () =>
-      createToastFn(theme.direction, {
+      createToastFn(toastStore, theme.direction, {
         ...defaultOptions,
         ...options,
       }),
-    [options, theme.direction, defaultOptions],
+    [toastStore, theme.direction, defaultOptions, options],
   )
 }

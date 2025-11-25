@@ -5,11 +5,12 @@ import {
   UseToastPromiseOption,
 } from "./toast"
 import { getToastPlacement } from "./toast.placement"
-import { toastStore } from "./toast.store"
 import type { ToastId } from "./toast.types"
 import type { UseToastOptions } from "./use-toast"
+import type { ToastStore } from "./toast.store"
 
 export function createToastFn(
+  toastStore: ToastStore,
   dir: "ltr" | "rtl",
   defaultOptions?: UseToastOptions,
 ) {

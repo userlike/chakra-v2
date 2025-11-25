@@ -1,5 +1,11 @@
 import { render, screen, waitFor } from "@chakra-v2/test-utils"
-import { ToastOptionProvider, ToastProvider, useToast } from "."
+import {
+  createToastStore,
+  ToastOptionProvider,
+  ToastProvider,
+  useToast,
+} from "."
+import { ToastStoreProvider } from "./toast.provider"
 
 describe("useToast", () => {
   beforeEach(async () => {
@@ -201,20 +207,22 @@ describe("useToast", () => {
     const title = "Hooray!"
     const description = "Something splendid happened"
 
+    const toastStore = createToastStore()
+
     const TestComponent = () => {
       const toast = useToast({ title, description })
       return <button onClick={() => toast()}>Toast</button>
     }
 
     const { user } = render(
-      <>
+      <ToastStoreProvider value={toastStore}>
         <ToastOptionProvider
           value={{ title: defaultTitle, description: defaultDescription }}
         >
           <TestComponent />
         </ToastOptionProvider>
         <ToastProvider />
-      </>,
+      </ToastStoreProvider>,
     )
 
     const button = await screen.findByText("Toast")

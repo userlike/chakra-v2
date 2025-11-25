@@ -19,11 +19,6 @@ const defaultState = {
   "bottom-right": [],
 }
 
-/**
- * Store to track all the toast across all positions
- */
-export const toastStore = createToastStore(defaultState)
-
 export function createToastStore(
   initialState: ToastState = defaultState,
 ): ToastStore {
@@ -35,7 +30,7 @@ export function createToastStore(
     listeners.forEach((l) => l())
   }
 
-  return {
+  const toastStore: ToastStore = {
     getState: () => state,
 
     subscribe: (listener) => {
@@ -60,7 +55,7 @@ export function createToastStore(
     },
 
     notify: (message, options) => {
-      const toast = createToast(message, options)
+      const toast = createToast(toastStore, message, options)
       const { position, id } = toast
 
       setState((prevToasts) => {
@@ -160,6 +155,8 @@ export function createToastStore(
 
     isActive: (id) => Boolean(findToast(toastStore.getState(), id).position),
   }
+
+  return toastStore
 }
 
 /**
@@ -171,7 +168,11 @@ let counter = 0
 /**
  * Create properties for a new toast
  */
-function createToast(message: ToastMessage, options: CreateToastOptions = {}) {
+function createToast(
+  toastStore: ToastStore,
+  message: ToastMessage,
+  options: CreateToastOptions = {},
+) {
   counter += 1
   const id = options.id ?? counter
 
