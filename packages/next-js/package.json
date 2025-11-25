@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/next-js",
-  "version": "3.0.0-next.0",
+  "version": "3.0.0-next.1",
   "description": "Chakra UI Integrations for Next.js 13",
   "keywords": [
     "nextjs"
@@ -39,7 +39,7 @@
     "@emotion/cache": "^11.11.0"
   },
   "peerDependencies": {
-    "@chakra-v2/react": ">=2.11.0-next.0",
+    "@chakra-v2/react": ">=3.0.0-next.11",
     "@emotion/react": ">=11",
     "next": ">=13",
     "react": ">=18"

@@ -1,5 +1,13 @@
 # @chakra-ui/react
 
+## 3.0.0-next.11
+
+### Major Changes
+
+- [`4436ad4`](https://github.com/userlike/chakra-v2/commit/4436ad4789a248f6fc902f78e1c7527847489423)
+  Thanks [@anilanar](https://github.com/anilanar)! - get rid of global/singleton
+  toasts completely
+
 ## 2.11.0-next.10
 
 ### Patch Changes

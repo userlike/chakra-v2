@@ -1,6 +1,6 @@
 {
   "name": "@chakra-v2/storybook-addon",
-  "version": "6.0.0-next.0",
+  "version": "6.0.0-next.1",
   "description": "The official Storybook Addon for Chakra UI",
   "main": "dist/cjs/index.cjs",
   "module": "dist/esm/index.mjs",
@@ -43,7 +43,7 @@
     "react": "^18.2.0"
   },
   "peerDependencies": {
-    "@chakra-v2/react": ">=2.11.0-next.0",
+    "@chakra-v2/react": ">=3.0.0-next.11",
     "@storybook/components": ">=7.0.12",
     "@storybook/manager-api": ">=7.0.12",
     "@storybook/preview-api": ">=7.0.12",
