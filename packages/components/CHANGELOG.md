@@ -1,5 +1,13 @@
 # @chakra-ui/react
 
+## 3.0.0-next.12
+
+### Patch Changes
+
+- [`1b70d25`](https://github.com/userlike/chakra-v2/commit/1b70d250598678825b63d45638a11de5e1923cb3)
+  Thanks [@anilanar](https://github.com/anilanar)! - provide a noop toast store
+  if none provided
+
 ## 3.0.0-next.11
 
 ### Major Changes
