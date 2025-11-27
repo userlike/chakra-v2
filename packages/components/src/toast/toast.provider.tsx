@@ -3,7 +3,7 @@ import { AnimatePresence, AnimatePresenceProps, Variants } from "framer-motion"
 import { useSyncExternalStore } from "react"
 import { Portal, PortalProps } from "../portal"
 import { ToastComponent, ToastComponentProps } from "./toast.component"
-import { type ToastStore } from "./toast.store"
+import { noopToastStore, type ToastStore } from "./toast.store"
 import type {
   CloseAllToastsOptions,
   ToastId,
@@ -97,7 +97,8 @@ export type ToastProviderProps = React.PropsWithChildren<{
 export const [ToastStoreProvider, useToastStoreContext] =
   createContext<ToastStore>({
     name: `ToastStoreContext`,
-    strict: true,
+    defaultValue: noopToastStore,
+    strict: false,
   })
 
 /**

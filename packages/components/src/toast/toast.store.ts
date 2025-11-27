@@ -159,6 +159,17 @@ export function createToastStore(
   return toastStore
 }
 
+export const noopToastStore: ToastStore = {
+  isActive: () => false,
+  getState: () => defaultState,
+  subscribe: () => () => {},
+  removeToast: () => {},
+  notify: () => "",
+  update: () => {},
+  closeAll: () => {},
+  close: () => {},
+}
+
 /**
  * Static id counter to create unique ids
  * for each toast
